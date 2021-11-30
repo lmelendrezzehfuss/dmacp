@@ -3,7 +3,7 @@
 __pycache__
 /archived_experiments
 /dmacp-app/node_modules
-/dmacp-app/public/build/
+#/dmacp-app/public/build/
 /dmacp-app/.DS_Store
 
 .vscode
