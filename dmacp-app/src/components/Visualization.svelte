@@ -26,7 +26,7 @@ import Curves from './Curves.svelte';
         yScale = d3.scaleLinear().domain(d3.extent(yValues.map(d => { return d }))).range([30, height - 30])
 
         // overwrite scale function and shift cener to 1945
-        xScale = (x) => { return xScale_(x-1945) }
+        xScale = (x) => xScale_(x-1945) 
         xTicks = xScale_.ticks(5)
 
         scaledEntities = data.map((essay, e) => {
