@@ -14,89 +14,314 @@
 prefix="time: http://www.w3.org/2006/time# ac: http://anthropocene-curriculum.org/tbd rdfs: http://www.w3.org/2000/01/rdf-schema#">
 
 <p id="P1">
-The Anthropocene Working Group is preparing the case for the definition of a new stratigraphic Epoch: this requires the 
-  demonstration of an objective change in properties of a geological archive over time. As each property being examined for this 
-  distinction can be considered as a time series, we encounter a classic scientific problem of distinguishing a signal from noise. 
-  We need to understand the reasons why a signal of change should exist in order to know how to look for it—for example, in what 
-  chemical form would a new pollutant emerge? We also need a theory (a model) of the noise—over time, how large are the natural 
-  background fluctuations, and what are their properties? A familiar example of this challenge is the tricky problem of 
-  distinguishing long-term climate change from the background of weather events. In this essay we examine these issues with 
-  respect to several chemical signals of environmental change which reflect global (anthro-)(bio-)geochemical cycles. To 
-  begin, we see what can be learned from the extensive measurements of sea-level change: an instructive example for a 
+The Anthropocene Working Group is preparing the case for the definition of a new stratigraphic Epoch: this requires the
+  demonstration of an objective change in properties of a geological archive over time. As each property being examined for this
+  distinction can be considered as a time series, we encounter a classic scientific problem of distinguishing a signal from noise.
+  We need to understand the reasons why a signal of change should exist in order to know how to look for it—for example, in what
+  chemical form would a new pollutant emerge? We also need a theory (a model) of the noise—over time, how large are the natural
+  background fluctuations, and what are their properties? A familiar example of this challenge is the tricky problem of
+  distinguishing long-term climate change from the background of weather events. In this essay we examine these issues with
+  respect to several chemical signals of environmental change which reflect global (anthro-)(bio-)geochemical cycles. To
+  begin, we see what can be learned from the extensive measurements of sea-level change: an instructive example for a
   high-quality source of data with considerable noise in terms of geographic variation.
 </p>
 
 <h3>Variations across time and space: Sea-level change</h3>
 
 <p id="P2">
-       Today, much of the world’s human population lives in the coastal areas at densities about three times higher than 
-       the global average. As these coastal environments are extensively reclaimed for agriculture, urbanization, 
-       and industry, sea-level rise is an existential threat to many communities. Systematic observations of the 
-       height of water at the coastline began in Amsterdam in 1682 and computations of mean sea level became possible 
-       when automatic tide gauges, which allowed continuous water height measurements, were invented in the 1930s. Sea 
-       level at a given location represents the mean height of the water surface relative to the underlying geological 
-       substrate. Establishing this mean requires time-averaging myriad fluctuations related to climatic and geophysical 
-       factors (Masson-Delmotte et al. 2013). Tides, for example, display a range of variabilities on longer timescales 
-       than the familiar diurnal variation, and year-to-year variations in storminess can be significant sources of noise. 
-       While tide gauges provide data that is highly precise and accurate in relation to time and space, their signal is local, 
-       and as we examine below, their noise is related to geographic variations. 
+       Today,
+       <span resource="#high_coastal_population_density" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2022" />
+         <meta property="rdfs:label" content="Today" />
+        much of the world’s human population lives in the coastal areas at densities about three times higher than
+        the global average.
+       </span>
+       As these coastal environments are extensively reclaimed for agriculture, urbanization,
+       and industry, sea-level rise is an existential threat to many communities.
+       <span resource="#water_height_measurements" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1682" />
+           <meta property="rdfs:label" content="1682" />
+         </span>
+         Systematic observations of the height of water at the coastline
+      </span>
+      began in Amsterdam in 1682 and
+      <span resource="#mean_sea_level_computations" typeof="time:Instant">
+        <meta property="time:inXSDgYear" content="1930" />
+        <meta property="rdfs:label" content="1930s" />
+        <meta property="ac:hasIndefiniteness" content="1" />
+        <!-- <meta property="ac:hasConnection" resource="#automatic_tide_gauges_invention" /> -->
+        <!-- <meta property="ac:hasConnection" resource="#water_height_measurements" /> -->
+        computations of mean sea level became possible
+      </span>
+      when
+       <span resource="#automatic_tide_gauges_invention" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="1930" />
+         <meta property="rdfs:label" content="1930s" />
+         <meta property="ac:hasIndefiniteness" content="1" />
+         <!-- <meta property="ac:hasConnection" resource="#mean_sea_level_computations" /> -->
+         <!-- <meta property="ac:hasConnection" resource="#water_height_measurements" /> -->
+       automatic tide gauges, which allowed continuous water height measurements, were invented
+       </span>
+       in the 1930s. Sea level at a given location represents the mean height of the water surface relative to the underlying geological
+       substrate. Establishing this mean requires time-averaging myriad fluctuations related to climatic and geophysical
+       factors (Masson-Delmotte et al. 2013). Tides, for example, display a range of variabilities on longer timescales
+       than the familiar diurnal variation, and year-to-year variations in storminess can be significant sources of noise.
+       While tide gauges provide data that is highly precise and accurate in relation to time and space, their signal is local,
+       and as we examine below, their noise is related to geographic variations.
 </p>
 
 <p id="P3">
-  To understand sea level prior to the late twentieth century when tide gauges were widespread, we must use geological data. 
-  Salt marsh sediments contain microfossils whose narrow height distribution within the tidal range is delimited by modern 
-  studies. The sediments can be dated by radiometric analyses (14C, 210Pb) and the use of stratigraphic markers of pollutants, 
-  including metals, rare isotopes from atmospheric nuclear test measurements, and human-made pollutants. The resulting records 
-  of a proxy for sea level have a precision of ±5 years in the twentieth century and a vertical resolution within ±5 cm (Summerhayes 
+  To understand sea level prior to the late twentieth century when
+  <span resource="#widespread_tide_gauges" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1980" />
+      <meta property="rdfs:label" content="Late twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+      <!-- <meta property="ac:hasConnection" resource="#automatic_tide_gauges_invention" /> -->
+    </span>
+  tide gauges were widespread
+  </span>
+  , we must use geological data.
+  Salt marsh sediments contain microfossils whose narrow height distribution within the tidal range is delimited by modern
+  studies. The sediments can be dated by radiometric analyses (14C, 210Pb) and the use of stratigraphic markers of pollutants,
+  including metals, rare isotopes from atmospheric nuclear test measurements, and human-made pollutants. The
+  <span resource="#sea_level_measurement_precision" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="1950" />
+    <meta property="rdfs:label" content="Twentieth century" />
+    <meta property="ac:hasIndefiniteness" content="1" />
+  resulting records of a proxy for sea level have a precision of ±5 years
+  </span>
+  in the twentieth century and a vertical resolution within ±5 cm (Summerhayes
   and Cearreta 2019).
 </p>
 
 <p id="P4">
-       The primary anthropogenic disturbance to the pre-existing long-term trends in sea level is the emission of greenhouse gases. Since 
-       the mid-twentieth century, 90 percent of all carbon used to date by humans was consumed to drive the huge recent industrial development 
-       (Syvitski et al. 2020). Consequently, the lower atmosphere warmed 1.2°C, the ocean increased its temperature, most mountain glaciers are 
-       retreating, and both the Antarctic and Greenland ice sheets are losing mass: accordingly, the global sea level rose 30 cm (Summerhayes 
-       and Cearreta 2019). Sea-level change is one of the most important consequences of the Quaternary (last 2.6 million years) climate 
-       variability, as the sea level decreases during glacial intervals and increases during interglacial phases. Comparing the tide-gauge 
-       and geological records shows that the speed of recent sea-level rise in the post-glacial interval has recently increased. Relatively 
-       low global rates of increase during the last 7,000 years (average <1 mm/year) transitioned upwards in the twentieth century and are 
-       currently >3 mm/year (Masson-Delmotte et al. 2013). Global average sea levels are currently higher than at any time in the last 115,000 
-       years, after the end of the previous interglacial phase. 
+       The primary anthropogenic disturbance to the pre-existing long-term trends in sea level is the emission of greenhouse gases. Since
+       the mid-twentieth century,
+       <span resource="#carbon_consumption" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1950" />
+           <meta property="rdfs:label" content="Mid-twentieth century" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+         <span property="time:hasEnd" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="2022" />
+           <meta property="rdfs:label" content="To date" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       90 percent of all carbon used to date by humans was consumed to drive the huge recent industrial development
+       </span>
+       (Syvitski et al. 2020). Consequently,
+       <span resource="#warming_of_lower_atmosphere" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="1950" />
+         <meta property="rdfs:label" content="Mid-twentieth century" />
+         <meta property="ac:hasIndefiniteness" content="1" />
+       the lower atmosphere warmed 1.2°C,
+       </span>
+       <span resource="#increased_ocean_temperature" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="1950" />
+         <meta property="rdfs:label" content="Mid-twentieth century" />
+         <meta property="ac:hasIndefiniteness" content="1" />
+       the ocean increased its temperature,
+       </span>
+       <span resource="#mountain_glaciers_retreat" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1950" />
+           <meta property="rdfs:label" content="Mid-twentieth century" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       most mountain glaciers are retreating,
+       </span>
+       <span resource="#ice_sheets_loss_of_mass" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1950" />
+           <meta property="rdfs:label" content="Mid-twentieth century" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       and both the Antarctic and Greenland ice sheets are losing mass
+       </span>
+       : accordingly,
+       <span resource="#sea_level_rise" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1950" />
+           <meta property="rdfs:label" content="Mid-twentieth century" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+         <span property="time:hasEnd" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="2022" />
+           <meta property="rdfs:label" content="To date" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       the global sea level rose 30 cm
+       </span>
+       (Summerhayes and Cearreta 2019). Sea-level change is one of the most important consequences of the Quaternary (last 2.6 million years) climate
+       variability, as the sea level decreases during glacial intervals and increases during interglacial phases. Comparing the tide-gauge
+       and geological records shows that the
+       <span resource="#increased_speed_of_sea_level_rise" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2000" />
+         <meta property="rdfs:label" content="Recently" />
+         <meta property="ac:hasIndefiniteness" content="1" />
+       speed of recent sea-level rise in the post-glacial interval has recently increased.
+       </span>
+       <span resource="#low_speed_of_sea_level_rise" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="-5100" />
+           <meta property="rdfs:label" content="7,000 years" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+         <span property="time:hasEnd" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1900" />
+           <meta property="rdfs:label" content="Twentieth century" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       Relatively low global rates of increase during the last 7,000 years (average <1 mm/year)
+       </span>
+       <span resource="#transition_of_sea_level_rise" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="1900" />
+         <meta property="rdfs:label" content="Twentieth century" />
+         <meta property="ac:hasIndefiniteness" content="1" />
+      transitioned upwards in the twentieth century and are currently >3 mm/year
+       </span>
+      (Masson-Delmotte et al. 2013).
+       <span resource="#highest_average_sea_levels" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2022" />
+         <meta property="rdfs:label" content="Currently" />
+       Global average sea levels are currently higher than at any time in the last 115,000 years, after the end of the previous interglacial phase.
+       </span>
 </p>
 
 <p id="P5">
-  We now know the direct causes of this change precisely because of the advent of satellite monitoring complemented by accurate surface 
-  devices (such as autonomous floats) in the ocean. Measurements of the absolute height of the ocean surface began with the launch of 
-  TOPEX/Poseidon in 1992, and were later enhanced by the GRACE satellite mission, which uses measurements of gravity to understand ice 
-  mass loss from ice sheets and glaciers. The absolute contribution of melting of the Greenland and Antarctic ice sheets to sea-level 
-  rise has increased since the early 1990s while expansion of the surface layer of the ocean due to warming has also accelerated (IPCC 2019). 
+  We now know the direct causes of this change precisely because of the advent of satellite monitoring complemented by accurate surface
+  devices (such as autonomous floats) in the ocean.
+  <span resource="#absolute_ocean_height_measurements" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1992" />
+      <meta property="rdfs:label" content="1992" />
+    </span>
+  Measurements of the absolute height of the ocean surface
+  </span>
+  began with the
+  <span resource="launch_of_TOPEX/Poseidon" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="1992" />
+    <meta property="rdfs:label" content="1992" />
+  launch of TOPEX/Poseidon in 1992,
+  </span>
+  and were later enhanced by the GRACE satellite mission, which uses measurements of gravity to understand ice
+  mass loss from ice sheets and glaciers.
+  <span resource="#contribution_of_ice_sheets_loss_of_mass" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1990" />
+      <meta property="rdfs:label" content="Early 1990s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  The absolute contribution of melting of the Greenland and Antarctic ice sheets to sea-level rise has increased
+  </span>
+   since the early 1990s while
+   <span resource="#ocean_surface_layer_expansion" typeof="time:ProperInterval">
+     <span property="time:hasBeginning" typeof="time:Instant">
+       <meta property="time:inXSDgYear" content="1990" />
+       <meta property="rdfs:label" content="Early 1990s" />
+       <meta property="ac:hasIndefiniteness" content="1" />
+     </span>
+   expansion of the surface layer of the ocean due to warming has also accelerated
+   </span>
+ (IPCC 2019).
 </p>
 
 <p id="P6">
-   The timing of the measured sea-level inflections matches, with a delay of about a decade, the stepped changes in atmospheric 
-   carbon dioxide concentrations (Summerhayes and Cearreta 2019). Additional noise in the time domain of the calculated global 
-   mean trends of sea level is observed to coincide with volcanic eruptions (negative deviations) and the 2016 Super El Niño and 
-   2011 La Niña events (positive and negative deviations, respectively), as can be seen in the Global Mean Sea Level chart provided 
-   by the University of Colorado. Other processes, such as ocean dynamics, tectonics, or glacial isostatic adjustment are spatially 
-   variable and cause sea-level rise to vary (usually very slowly) in rate and magnitude between different regions. Local and 
-   regional changes in these climatic and geophysical factors produce significant deviations from a global average rate of 
-   sea-level change (Masson-Delmotte et al. 2013). These dynamics are well illustrated by the interactive graphics at the Permanent 
-   Service for Mean Sea Level (PSMSL) based at the National Oceanography Centre in Liverpool. 
+   The timing of the measured sea-level inflections matches, with a delay of about a decade, the stepped changes in atmospheric
+   carbon dioxide concentrations (Summerhayes and Cearreta 2019). Additional noise in the time domain of the calculated global mean trends of sea level is observed to coincide with volcanic eruptions (negative deviations) and the 2016 Super El Niño and
+   2011 La Niña events (positive and negative deviations, respectively), as can be seen in the Global Mean Sea Level chart provided by the University of Colorado. Other processes, such as ocean dynamics, tectonics, or glacial isostatic adjustment are spatially
+   variable and cause sea-level rise to vary (usually very slowly) in rate and magnitude between different regions. Local and
+   regional changes in these climatic and geophysical factors produce significant deviations from a global average rate of
+   sea-level change (Masson-Delmotte et al. 2013).
+   <span resource="#illustration_of_ocean_dynamics" typeof="time:Instant">
+     <meta property="time:inXSDgYear" content="2022" />
+     <meta property="rdfs:label" content="currently" />
+     <meta property="ac:hasIndefiniteness" content="1" />
+   These dynamics are well illustrated by the interactive graphics at the Permanent Service for Mean Sea Level (PSMSL) based at the National Oceanography Centre in Liverpool.
+   </span>
 </p>
 
 <p id="P7">
-Europe is a continent well-furnished with tide gauges since the beginning of the twentieth century. Their data reveal large 
-  regional variations, primarily associated with rising land in Scandinavia where rebound effects from the last ice age are 
-  still in progress. Using data from recent decades, the reduction in sea-level fall in these areas and the increase in rise 
-  elsewhere is clear. By contrast, Australia’s trends in the early decades of the twentieth century cannot be reliably established
-  because of the lack of monitoring sites. However, over the last three decades, the rising trend is unequivocal, including in 
+  <span resource="#widespread_tide_gauges_in_Europe" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1930" />
+      <meta property="rdfs:label" content="Beginning of the twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+      <!-- <meta property="ac:hasConnection" resource="#automatic_tide_gauges_invention" /> -->
+    </span>
+Europe is a continent well-furnished with tide gauges
+</span>
+ since the beginning of the twentieth century.
+ <span resource="#tide_gauge_data_regional_variation" typeof="time:ProperInterval">
+   <span property="time:hasBeginning" typeof="time:Instant">
+     <meta property="time:inXSDgYear" content="1930" />
+     <meta property="rdfs:label" content="Beginning of the twentieth century" />
+     <meta property="ac:hasIndefiniteness" content="1" />
+   </span>
+   <span property="time:hasEnd" typeof="time:Instant">
+     <meta property="time:inXSDgYear" content="2022" />
+     <meta property="rdfs:label" content="To date" />
+     <meta property="ac:hasIndefiniteness" content="1" />
+   </span>
+ Their data reveal large regional variations
+ </span>
+ , primarily associated with
+<span resource="#ice_age_rebound_effects" typeof="time:ProperInterval">
+  <span property="time:hasBeginning" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="-13720" />
+    <meta property="rdfs:label" content="Last ice age" />
+    <meta property="ac:hasIndefiniteness" content="1" />
+  </span>
+  rising land in Scandinavia where rebound effects from the last ice age are still in progress.
+  </span>
+  Using data from recent decades,
+  <span resource="#sea_level_discrepancies" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1990" />
+      <meta property="rdfs:label" content="Recent decades" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+      <!-- <meta property="ac:hasConnection" resource="#ice_age_rebound_effects" /> -->
+    </span>
+  the reduction in sea-level fall in these areas and the increase in rise
+  elsewhere is clear.
+  </span>
+  By contrast,
+  <span resource="#Australian_lack_of_monitoring_sites" typeof="time:ProperInterval">
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1930" />
+      <meta property="rdfs:label" content="Early decades of the twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  Australia’s trends in the early decades of the twentieth century cannot be reliably established
+  because of the lack of monitoring sites.
+  </span>
+  <span resource="#Australian_sea_level_rise" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1990" />
+      <meta property="rdfs:label" content="Last three decades" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  However, over the last three decades, the rising trend is unequivocal, including in
   areas such as coastal South Australia which are characterized by long-term uplift of the land.
+  </span>
 </p>
 
 <p id="P8">
-   The latest IPCC projections (2019) predict an average rise in the sea level at the end of the twenty-first century of 
-   28–57 cm in a scenario of drastic reduction in greenhouse effect emissions, and of 55–140 cm if there is growth in 
-   emissions (Figure 1). The spread within the forecasts reflects the uncertainties that exist about the future behaviour 
+  <span resource="#IPCC_projections" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="2090" />
+      <meta property="rdfs:label" content="End of the twenty-first century" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    <!-- Would we want to show a potential future on the timeline as well? -->
+    </span>
+   The latest IPCC projections (2019) predict an average rise in the sea level at the end of the twenty-first century of
+   28–57 cm in a scenario of drastic reduction in greenhouse effect emissions, and of 55–140 cm if there is growth in
+   emissions (Figure 1).
+   </span>
+   The spread within the forecasts reflects the uncertainties that exist about the future behaviour
    of the Antarctic and Greenland ice sheets.
 </p>
 
@@ -104,76 +329,213 @@ Europe is a continent well-furnished with tide gauges since the beginning of the
 
 <p id="P9">
   Certain elements and their isotopes (atoms of the same element differing in mass) can be used as geochemical tracers of anthropogenic
-  impact. Our understanding of the extent to which ice sheets have waxed and waned in the past has come from the geochemistry of oxygen
-  isotopes, originating from the work of the chemist and Nobel laureate Harold Urey in the late 1940s. Workers have traditionally used 
-  mass spectrometry to make extremely precise measurements of the ratio of abundance of a rare isotope such as 18O (spoken as oxygen-18
+  impact. Our
+  <span resource="#ice_sheets_understanding" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1947" />
+      <meta property="rdfs:label" content="Late 1940s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+      </span>
+  understanding of the extent to which ice sheets have waxed and waned in the past
+  </span>
+  has come from the geochemistry of oxygen isotopes, originating from the
+  <span resource="#Harold_Urey_work" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1947" />
+      <meta property="rdfs:label" content="Late 1940s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1949" />
+      <meta property="rdfs:label" content="Late 1940s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  work of the chemist and Nobel laureate Harold Urey
+  </span>
+  in the late 1940s. Workers have traditionally used mass spectrometry to make extremely precise measurements of the ratio of abundance of a rare isotope such as 18O (spoken as oxygen-18
   ) to a common isotope such as 16O on a gas produced in the laboratory from the material (e.g. water or calcium carbonate). The ratios
   are normally expressed as the delta value, e.g. δ18O, a number in parts per thousand (‰) expressing the relative abundance of 18O to
-  16O. Lower delta values mean both less 18O as seen in water vapor compared with its source water, and in a progressively greater lowering 
+  16O. Lower delta values mean both less 18O as seen in water vapor compared with its source water, and in a progressively greater lowering
   of 18O in rain and snow from cooling air masses. Hence ice sheets, primarily formed from evaporation from sea water, have very low delta
   values which, during an ice age, lead to a higher δ18O value of the remaining seawater. The larger the mass of ice, the larger this
-  ice-volume effect. When considering oxygen in seashells, there is also a temperature effect on the composition of precipitated calcium
+  ice-volume effect.
+  <span resource="#temperature_effect_demonstration" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="1967" />
+    <meta property="rdfs:label" content="1967" />
+  When considering oxygen in seashells, there is also a temperature effect on the composition of precipitated calcium
   carbonate shells which reinforces the ice-volume effect, as classically demonstrated from deep ocean cores by Sir Nicholas Shackleton
-  in 1967. As a result, the long-term stratigraphy of the Quaternary ice ages is framed by oxygen isotope stages which alternate between 
-  cold glacial and warmer interglacial intervals, and we know that in glacial stages, the global temperature averaged 4–6°C below present
+  </span>
+  in 1967. As a result,
+  <span resource="#long-term_stratigraphy_of_Quaternary" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1967" />
+      <meta property="rdfs:label" content="1967" />
+    </span>
+  the long-term stratigraphy of the Quaternary ice ages is framed by oxygen isotope stages which alternate between
+  cold glacial and warmer interglacial intervals
+  </span>
+  , and we know that in glacial stages, the global temperature averaged 4–6°C below present
   values but was 9–11°C below present values in Antarctica.
 </p>
 
 <p id="P10">
-Although a (small) oxygen isotope (δ18O) signal does mark the base of our current interglacial period (the Holocene) in a Greenland 
-       ice core, the subsequent variations are more subtle and below the 0.5–1°C sensitivity of the oxygen isotope proxy. Consequently, 
+Although a (small) oxygen isotope (δ18O) signal does mark the base of our current interglacial period (the Holocene) in a Greenland
+       ice core, the subsequent variations are more subtle and below the 0.5–1°C sensitivity of the oxygen isotope proxy. Consequently,
        an assemblage of temperature proxies is used, rather than just oxygen isotopes, to establish Holocene temperature archives. When
-       it comes to the mid-twentieth century proposed start for the Anthropocene, there is no discrete (δ18O) signal in oxygen isotope
+       it comes to the mid-twentieth century
+       <span resource="#proposed_start_of_Anthropocene" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="1950" />
+         <meta property="rdfs:label" content="Mid-twentieth century" />
+         <meta property="ac:hasIndefiniteness" content="1" />
+         <!-- not actually on the timeline, but useful to show? -->
+       proposed start for the Anthropocene
+       </span>
+       , there is no discrete (δ18O) signal in oxygen isotope
        archives, even in the relatively sensitive Antarctic records. In fact, the gradual increase in the rate of temperature change makes
-       it difficult to define an Anthropocene boundary on the basis of any geochemical proxy for temperature. This problem is also the 
-       basis for the struggle (now largely won) to convince politicians and the public of the reality of warming (also known as the 
-       “boiling frog syndrome” of inattentiveness to gradual risk increases).
+       it difficult to define an Anthropocene boundary on the basis of any geochemical proxy for temperature. This problem is also the
+       <span resource="#convincing_of_warming" typeof="time:ProperInterval">
+         <span property="time:hasEnd" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="2022" />
+           <meta property="rdfs:label" content="Now" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       basis for the struggle (now largely won) to convince politicians and the public of the reality of warming
+       </span>
+       (also known as the “boiling frog syndrome” of inattentiveness to gradual risk increases).
 </p>
 
 <p id="P11">
-The increasing rate of change in temperature in recent decades does, however, lead to measurable changes in Antarctic ice-core 
-  records. Hydrogen isotopes show covariation with oxygen and with temperature, so measuring both elements provide a more robust
+The
+ <span resource="#increasing_rate_of_change_in_temperature" typeof="time:ProperInterval">
+  <span property="time:hasBeginning" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="1990" />
+    <meta property="rdfs:label" content="Recent decades" />
+    <meta property="ac:hasIndefiniteness" content="1" />
+  </span>
+  increasing rate of change in temperature
+  </span>
+  in recent decades does, however, lead to
+  <span resource="#change_in_ice_core_records" typeof="time:ProperInterval">
+   <span property="time:hasBeginning" typeof="time:Instant">
+     <meta property="time:inXSDgYear" content="1990" />
+     <meta property="rdfs:label" content="Recent decades" />
+     <meta property="ac:hasIndefiniteness" content="1" />
+   </span>
+  measurable changes in Antarctic ice-core records
+   </span>
+  . Hydrogen isotopes show covariation with oxygen and with temperature, so measuring both elements provide a more robust
   measure of past temperatures. To avoid local effects, the most reliable signals are reached through the combination of multiple
   ice-core records from a given site and/or region, and through the site-specific calibration of the relationships between water-stable
   isotopes and temperature (Stenni et al., 2017), which has been carried out under an international project identifying several discrete
   regions of Antarctica that exhibit somewhat different climate signals (Figure 2). Temperature reconstructions based on the isotopic
-  data showed warming in recent years in three of these regions. In each case the temperature increase began around 1920 and continued
-  to the latest available measurements (ca. 2005) with rates of warming between 1 and 2°C/100 years. These increases followed substantial
-  declines in temperature that lasted over the previous 2,000 years. However, relative to the variability of the climate signal in the
-  rest of Antarctica for the past 2,000 years, only the rise in temperature of the Antarctic Peninsula is unusual. It seems reasonable 
-  to assume that because of its more northerly aspect, the Peninsula is subject to a slightly different climatic regime than most of the 
-  continent, and one that is closely connected to the global warming identified elsewhere on the planet. Close inspection of the isotopic 
-  temperature signal for the Peninsula suggests greater warming after about 1970 than between 1920 and 1970, much as is found in the global
-  surface temperature signal. It seems likely, then, that the Peninsula temperature signal reflects gradual warming after 1900, followed by 
-  steeper warming after 1970, as on the rest of the globe. 
+  data showed warming in recent years in three of these regions. In each case the
+  <span resource="#regional_temperature_increase" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1920" />
+      <meta property="rdfs:label" content="Around 1920" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="2005" />
+      <meta property="rdfs:label" content="ca. 2005" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  temperature increase
+   </span>
+  began around 1920 and continued
+  to the latest available measurements (ca. 2005) with rates of warming between 1 and 2°C/100 years. These increases followed
+  <span resource="#substantial_temperature_decline" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="20" />
+      <meta property="rdfs:label" content="Previous 2,000 years" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="2020" />
+      <meta property="rdfs:label" content="Previous 2,000 years" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  substantial declines in temperature
+  </span>
+  that lasted over the previous 2,000 years. However, relative to the variability of the climate signal in the
+  rest of Antarctica for the past 2,000 years, only the rise in temperature of the Antarctic Peninsula is unusual. It seems reasonable
+  to assume that because of its more northerly aspect, the Peninsula is subject to a slightly different climatic regime than most of the
+  continent, and one that is closely connected to the global warming identified elsewhere on the planet. Close inspection of the isotopic
+  temperature signal for the Peninsula suggests
+  <span resource="#sugggested_increase_in_Antartctic_Peninsula_temperatures" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1970" />
+      <meta property="rdfs:label" content="About 1970" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  greater warming
+  </span>
+  after about 1970 than between 1920 and 1970, much as is found in the global
+  surface temperature signal. It seems likely, then, that the Peninsula temperature signal reflects
+  <span resource="#gradual_warming" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1900" />
+      <meta property="rdfs:label" content="after 1900" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1970" />
+      <meta property="rdfs:label" content="1970" />
+    </span>
+  gradual warming
+  </span>
+  after 1900, followed by
+<span resource="#sugggested_increase_in_Antartctic_Peninsula_temperatures" >
+  steeper warming
+</span>
+  after 1970, as on the rest of the globe.
 </p>
 
 <h3>The carbon cycle and sulphur in the atmosphere</h3>
 
 <p id="P12">
 A primary driver of global warming is the burning of fossil fuels which have created a first-order change in the carbon cycle. Fluxes
-       of carbon between reservoirs have increased, and carbon, mainly as carbon dioxide, is increasingly stored in the atmosphere. 
+       of carbon between reservoirs have increased, and carbon, mainly as carbon dioxide, is increasingly stored in the atmosphere.
        This newly released carbon has a distinct fingerprint in terms of the ratio of the stable isotopes of carbon (13C/12C) as determined
        from mass spectrometry. Expressed in terms of the delta number (δ13C), the rare 13C is much less abundant in the biosphere (δ13C
-       around -25‰), and thus in fossil fuels that stem from organic material, than in the pre-industrial atmosphere (-6.5‰). Hence 
-       atmospheric CO2 trapped in ice cores shows an inverse relationship to δ13C, known as the Suess effect, with a pronounced inflection
-       around 1965 CE. This signal in ice cores shows little noise because it reflects the composition of a well-mixed atmosphere. It 
+       around -25‰), and thus in fossil fuels that stem from organic material, than in the pre-industrial atmosphere (-6.5‰). Hence
+       atmospheric CO2 trapped in ice cores shows an inverse relationship to δ13C, known as the
+       <span resource="#Suess_effect_inflection" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="1965" />
+         <meta property="rdfs:label" content="Around 1965 CE" />
+         <meta property="ac:hasIndefiniteness" content="1" />
+       Suess effect, with a pronounced inflection
+       </span>
+       around 1965 CE. This signal in ice cores shows little noise because it reflects the composition of a well-mixed atmosphere. It
        therefore compares in quality with that of radioactive species such as radiocarbon and plutonium released through atmospheric
-       nuclear tests. Carbon isotopes in other archives typically show a less clear-cut relationship because of the complexities of 
+       nuclear tests. Carbon isotopes in other archives typically show a less clear-cut relationship because of the complexities of
        biochemical cycling. For example, this signal is masked altogether in cave carbonates (speleothems) because of large fractionations
-       in carbon isotopes in cave systems. Trees provide an interesting intermediate example where, although the carbon fixed is derived 
-       directly from the atmosphere, seasonal to decadal changes in tree physiology add noise to the Suess effect. However, in the dataset 
-       shown below (from Loader et al., 2013) a moving average of the data reveals the underlying atmospheric signal, with an inflection 
-       around 1960 CE. Marine records, such as from corals, also demonstrate a clear signal (Figure 3). 
+       in carbon isotopes in cave systems. Trees provide an interesting intermediate example where, although the carbon fixed is derived
+       directly from the atmosphere, seasonal to decadal changes in tree physiology add noise to the Suess effect. However, in the dataset
+       shown below (from Loader et al., 2013) a moving average of the
+       <span resource="#atmospheric_signal_data_inflection" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="1960" />
+         <meta property="rdfs:label" content="Around 1960 CE" />
+         <meta property="ac:hasIndefiniteness" content="1" />
+       data reveals the underlying atmospheric signal, with an inflection
+       </span>
+       around 1960 CE. Marine records, such as from corals, also demonstrate a clear signal (Figure 3).
 </p>
 
 <p id="P13">
 A contrasting example is provided by sulphur in the atmosphere. It is released naturally from volcanic eruptions, but emissions
-  increased enormously because of industrial processes, particularly the burning of sulphurous coal. Because this sulphur is in 
+  increased enormously because of industrial processes, particularly the burning of sulphurous coal. Because this sulphur is in
   the form of microscopic aerosol particles, the abundance of sulphur in geological archives and its stable isotope composition
-  show regional variations (Fairchild 2019). For example, trees and speleothems in Europe show a mid-twentieth century rise followed 
-  by a fall reflecting changes in this industrial activity. These records rely on micro-scale analytical techniques at specialized
-  facilities, such as ion probes or the fluorescence produced by X-rays in huge synchrotron facilities. Both are anthrobiogeochemical 
+  show regional variations (Fairchild 2019). For example,
+  <span resource="#sulphur_isotope_regional_variations" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1950" />
+      <meta property="rdfs:label" content="Mid-twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  trees and speleothems in Europe show a mid-twentieth century rise followed by a fall reflecting changes in this industrial activity.
+  </span>
+  These records rely on micro-scale analytical techniques at specialized facilities, such as ion probes or the fluorescence produced by X-rays in huge synchrotron facilities. Both are anthrobiogeochemical
   records since the O and S isotopes in sulphate in rainfall become fractionated when stored in soil humic substances. This pollution
   indicator is also seen as an anthrogeochemical (i.e. non-biological) signal in Greenland ice, but is absent in Antarctic ice cores.
 </p>
@@ -182,107 +544,271 @@ A contrasting example is provided by sulphur in the atmosphere. It is released n
 
 <p id="P14">
 The modern nitrogen cycle is a typical anthrobiogeochemical cycle because human activities have led to substantial changes in
-       natural processes governing nitrogen fixation, its bioavailability, and its overall fate in the environment the production 
-       of fertilizer through the synthesis of ammonia from atmospheric N2 (Haber-Bosch process) and its use in agriculture since 
-       the beginning of the twentieth century constitute one of the most important sources of anthropogenic perturbations of 
-       the nitrogen cycle, along with the burning of fossil fuels and symbiotic nitrogen fixation by bacteria hosted by cultivated plants. 
+       natural processes governing nitrogen fixation, its bioavailability, and its overall fate in the environment. The
+       <span resource="#production_and_use_of_fertilizer" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1900" />
+           <meta property="rdfs:label" content="Beginning of the twentieth century" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       production of fertilizer through the synthesis of ammonia from atmospheric N2 (Haber-Bosch process) and its use in agriculture
+       </span>
+       since the beginning of the twentieth century constitute one of the most important sources of anthropogenic perturbations of
+       the nitrogen cycle, along with the burning of fossil fuels and symbiotic nitrogen fixation by bacteria hosted by cultivated plants.
 </p>
 
 <p id="P15">
 An excess of nitrogen causes a negative impact on all environmental compartments. In surface waters it brings about eutrophication,
-  leads to a deficit in oxygen (hypoxia) into the sea, and a decreased input of dissolved silica soils, excessive amounts of nitrogen 
+  leads to a deficit in oxygen (hypoxia) into the sea, and a decreased input of dissolved silica soils, excessive amounts of nitrogen
   cause acidification and decreased biodiversity. It also diminishes the quality of air through the formation of particulate matter
-  and ozone. The above examples of complex environmental impacts are often referred to as a “nitrogen cascade.” 
+  and ozone. The above examples of complex environmental impacts are often referred to as a “nitrogen cascade.”
 </p>
 
 <p id="P16">
 Nitrogen has two stable isotopes, 14N and 15N, with 14N making up 99.63 percent of all nitrogen occurring in nature. Anthropogenic
        sources produce a change of nitrogen stable isotope ratios in different environmental archives. This change may potentially
-       be used as a signal of the Anthropocene. Sample analysis is again by mass spectrometry with preparation techniques tailored 
-       to create gas for analysis from materials such as organic matter or ice. The increase in concentrations of nitrogen compounds 
-       in the environment, especially from fossil fuel burning, is usually accompanied by a decrease in δ15N values. For example, 
-       the differences in δ15N values of nitrate recorded in a Greenland ice core in the past 150 years was as high as 12‰, decreasing
-       from +11‰ to −1‰. Similar patterns of δ15N values were found in analyses of total nitrogen in organic carbon from dated
-       lake sediments collected from 25 remote and nutrient-poor lakes in the Northern Hemisphere. The present δ15N value of ∼8‰ 
-       recorded in North Pacific deep-sea corals is the lowest it has been during the last 5,000 years. In many environmental archives, 
-       the rate of decline in the δ15N value has accelerated and become pronounced, but there are also reports of enrichment in 15N in
-       natural archives during recent decades. In coral skeletons from the Pearl River estuary in China, for example, relatively stable
-       δ15N values (a range of 9 to 12‰) were recorded in the skeletons dated from the mid-Holocene to the 1980s, followed by an increase
-       to >13‰ during 1987–1993 CE and later a decline to the pre-1980s values. The increase observed in the late 1980s/early 1990s was
-       caused by a growing input of sewage to the Pearl River estuary (Figure 4). Nitrification (oxidation of NH4+ from sewage to nitrites
+       be used as a signal of the Anthropocene. Sample analysis is again by mass spectrometry with preparation techniques tailored
+       to create gas for analysis from materials such as organic matter or ice. The increase in concentrations of nitrogen compounds
+       in the environment, especially from fossil fuel burning, is usually accompanied by a decrease in δ15N values. For example,
+       the
+       <span resource="#15N_value_differences" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1872" />
+           <meta property="rdfs:label" content="Past 150 years" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+         <span property="time:hasEnd" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="2022" />
+           <meta property="rdfs:label" content="Past 150 years" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       differences in δ15N values of nitrate recorded in a Greenland ice core in the past 150 years was as high as 12‰, decreasing
+       from +11‰ to −1‰.
+       </span>
+       Similar patterns of δ15N values were found in analyses of total nitrogen in organic carbon from dated
+       lake sediments collected from 25 remote and nutrient-poor lakes in the Northern Hemisphere.
+       <span resource="#present_15N_value_North_Pacific" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2022" />
+         <meta property="rdfs:label" content="Present" />
+       The present δ15N value of ∼8‰ recorded in North Pacific deep-sea corals is the lowest it has been during the last 5,000 years.
+       </span>
+       In many environmental archives, the rate of decline in the δ15N value has accelerated and become pronounced, but there are also
+       <span resource="#15N_enrichment" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1990" />
+           <meta property="rdfs:label" content="Recent decades" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       reports of enrichment in 15N in natural archives
+       </span>
+       during recent decades. In coral skeletons from the Pearl River estuary in China, for example,
+       <span resource="#Pearl_River_15N_stability" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="-5000" />
+           <meta property="rdfs:label" content="Mid-Holocene" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+         <span property="time:hasEnd" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1980" />
+           <meta property="rdfs:label" content="1980s" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       relatively stable δ15N values (a range of 9 to 12‰)
+       </span>
+       were recorded in the skeletons dated from the mid-Holocene to the 1980s, followed by an
+       <span resource="#Pearl_River_15N_increase" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1987" />
+           <meta property="rdfs:label" content="1987" />
+       </span>
+        <span property="time:hasEnd" typeof="time:Instant">
+          <meta property="time:inXSDgYear" content="1993" />
+          <meta property="rdfs:label" content="1993" />
+       </span>
+       <!-- <meta property="ac:hasConnection" resource="#15N_enrichment" /> -->
+       increase to >13‰
+       </span>
+       during 1987–1993 CE and later a
+       <span resource="#Pearl_River_15N_decline" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1993" />
+           <meta property="rdfs:label" content="Later" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       decline to the pre-1980s values.
+       </span>
+       <span resource="#Pearl_River_15N_increase" >
+       The increase observed in the late 1980s/early 1990s was caused by a growing input of sewage to the Pearl River estuary
+       </span>
+       (Figure 4). Nitrification (oxidation of NH4+ from sewage to nitrites
        and nitrates) and subsequent denitrification (reduction of nitrates to N2O and N2) caused an increase in the δ15N values because
        the products of denitrification were enriched in the lighter N isotope, whereas the remaining inorganic N species were enriched
-       in 15N. It is fortunate that despite the complexities of the biogeochemical cycling of different nitrogen species, both the 
-       nitrogen isotope records of nitrate and the organic carbon fraction reflect environmental change. The observed trends in the 
-       δ15N values of different environmental archives reflect a combination of natural- and human-driven processes, thus confirming 
-       the usefulness of stable nitrogen isotopes for our understanding of anthrobiogeochemical nitrogen cycles. 
+       in 15N. It is fortunate that despite the complexities of the biogeochemical cycling of different nitrogen species, both the
+       nitrogen isotope records of nitrate and the organic carbon fraction reflect environmental change. The observed trends in the
+       δ15N values of different environmental archives reflect a combination of natural- and human-driven processes, thus confirming
+       the usefulness of stable nitrogen isotopes for our understanding of anthrobiogeochemical nitrogen cycles.
 </p>
 
 <h3>The legacy of lead</h3>
 
 <p id="P17">
-Trace metals are integral parts of natural element cycles and, before human interference, came mainly from geo-/lithogenic sources via 
+Trace metals are integral parts of natural element cycles and, before human interference, came mainly from geo-/lithogenic sources via
   the weathering of rocks. We focus here on lead (Pb), as it is relatively common in the Earth’s crust (average 14 ppm) compared to
-  other trace metals, has been widely mined or formed a by-product of mining since prehistoric times, and is identified as a highly 
-  toxic element, making the monitoring of Pb contamination as well as searches for its provenance a critical issue in geological, 
-  environmental, and public research. Beginning as early as thousands of years BCE, the increased availability of anthropogenic trace 
-  metals in the environment, and thus their involvement in anthrobiogeochemical cycles, began with the mining of ores and other raw
-  materials for use in various industrial processes: initially lead was merely a by-product, and only later was mined directly. 
+  other trace metals, has been widely mined or formed a by-product of mining since prehistoric times, and is identified as a highly
+  toxic element, making the monitoring of Pb contamination as well as searches for its provenance a critical issue in geological,
+  environmental, and public research. Beginning as early as thousands of years BCE, the
+  <span resource="#anthropogenic_trace_metals" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="-10000" />
+      <meta property="rdfs:label" content="Thousands of years BCE" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  increased availability of anthropogenic trace metals in the environment, and thus their involvement in anthrobiogeochemical cycles, began with the mining of ores and other raw
+  materials for use in various industrial processes
+  </span>
+  : initially lead was merely a by-product, and only later was mined directly.
 </p>
 
 <p id="P18">
-Many different techniques are used to determine total Pb concentrations in samples, and the analytical precision of these techniques 
+Many different techniques are used to determine total Pb concentrations in samples, and the analytical precision of these techniques
        is far less than the sample-to-sample variation. Ratios of stable isotopes such as 206Pb, 207Pb, and 208Pb analyzed by different
        types of mass spectrometry can be used to distinguish the sources of contamination by lead in the environment, e.g. in assessing
        the relative contributions from mining against natural background values (e.g. Gałuszka and Wagreich 2019). Natural background
        fluctuations vary across orders of magnitude, driven by local high-lead sources like ores, variabilities in input from weathering,
-       and sediment dilution. Remote archives such as ice sheets largely show inputs of natural dust particles, contaminated by 
+       and sediment dilution. Remote archives such as ice sheets largely show inputs of natural dust particles, contaminated by
        anthropogenic emissions such as those from lead in petrol. Because ice sheets are remote, background concentrations of Pb
-       in Arctic and Antarctic ice cores range from a few to a few tens of parts-per thousand, whereas in other archives, such as 
+       in Arctic and Antarctic ice cores range from a few to a few tens of parts-per thousand, whereas in other archives, such as
        lakes and bogs, natural background concentrations are mainly around tens of parts-per million (Gałuszka and Wagreich 2019).
 </p>
 
 <p id="P19">
-The earliest regional to supra-regional peaks of aerosol Pb (a by-product of silver mining and smelting processes) can be 
-  identified in Northern Hemisphere ice cores from Greenland and Arctic Canada, and are linked to Phoenician-Greek mining 
-  and smelting activities some 3,000 years ago (Figure 5). This minor peak in some environmental archives of the Northern Hemisphere
-  was identified as a possible stratigraphic marker for an early Anthropocene (Wagreich and Draganits 2018).
-</p>
-
-<p id="P3">
-Later, silver, and thus also lead, mining and usage increased substantially during Roman times, which lead to significant human
-       health problems. This usage is recorded in archives by a widespread lead peak, more pronounced than the earlier one, and
-       is recognized in ice cores, estuaries, bogs, and remote lakes of the Northern Hemisphere; a Spanish source for the lead was 
-       revealed by isotope studies (Wagreich and Draganits 2018).
+The
+<span resource="#earliest_aerosol_Pb_peak" typeof="time:Instant">
+  <meta property="time:inXSDgYear" content="-978" />
+  <meta property="rdfs:label" content="Some 3,000 years ago" />
+  <meta property="ac:hasIndefiniteness" content="1" />
+  earliest regional to supra-regional peaks of aerosol Pb (a by-product of silver mining and smelting processes)
+  </span>
+  can be identified in Northern Hemisphere ice cores from Greenland and Arctic Canada, and are linked to Phoenician-Greek mining
+  and smelting activities some 3,000 years ago (Figure 5).
+<span resource="#earliest_aerosol_Pb_peak">
+  This minor peak in some environmental archives of the Northern Hemisphere
+  was identified as a possible stratigraphic marker for an early Anthropocene
+  </span>
+  (Wagreich and Draganits 2018).
 </p>
 
 <p id="P20">
-Global lead production and usage only began to rise again with silver production in medieval times. This was followed by an even 
-  larger rise due to silver mining and production in the New World, with abundant production and use punctuated by plagues and wars.
-  The Industrial Revolution brought a major rise in lead production and left a peak in archives around 1850–1890 CE that was much 
-  larger than the Roman peak. The Australian Broken Hill lead signal beginning around the 1850s onward formed the first peak in 
-  Antarctic ice cores. Final peak usage and global environmental contamination was reached during the mid-twentieth century, when
-  lead was used as an antiknock additive for petrol in the increasingly fossil-fuel driven transport system. This last peak, being 
-  in several geological archives an order of magnitude higher than the former more regional peaks of lead usage, provides a marker 
-  for the Great Acceleration. Although it was not as pronounced as are other chemical markers around the 1950s, the lead peak was 
-  very distinct and globally distributed on both land and oceans. Due to the eventual recognition of its toxic behaviour, lead as 
-  a petrol additive was banned in more and more countries, starting in the USA and Europe from the 1970s onwards. The recent widespread
-  Pb expulsion, then, began to increase in the 1920s, peaked in the late 1960s, and declined from the late 1970s onward, arriving at 
-  today’s intermediate to high values of contamination and fluxes of lead in the Earth system (Gałuszka and Wagreich 2019).
+Later, silver, and thus also lead, mining and usage increased substantially during Roman times, which lead to significant human
+       <!-- Roman times timeframe not explicitly denoted. Tag or no tag? -->
+       health problems. This usage is recorded in archives by a widespread lead peak, more pronounced than the earlier one, and
+       is recognized in ice cores, estuaries, bogs, and remote lakes of the Northern Hemisphere; a Spanish source for the lead was
+       revealed by isotope studies (Wagreich and Draganits 2018).
+</p>
+
+<p id="P21">
+Global lead production and usage only began to rise again with silver production in medieval times.
+<!-- Medieval times timeframe not explicitly denoted. Tag or no tag? -->
+  This was followed by an even larger rise due to silver mining and production in the New World, with abundant production and use punctuated by plagues and wars.
+  The
+  <span resource="#Industrial_Revolution_lead_production" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1850" />
+      <meta property="rdfs:label" content="Around 1850–1890 CE" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1890" />
+      <meta property="rdfs:label" content="Around 1850–1890 CE" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  Industrial Revolution brought a major rise in lead production and left a peak in archives
+  </span>
+  around 1850–1890 CE that was much larger than the Roman peak. The Australian Broken Hill lead signal beginning around the 1850s onward formed the
+  <span resource="#first_Antarctic_lead_peak" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1850" />
+      <meta property="rdfs:label" content="Around the 1850s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  first peak in Antarctic ice cores.
+  </span>
+  <span resource="#final_lead_usage_peak" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="1950" />
+    <meta property="rdfs:label" content="Mid-twentieth century" />
+    <meta property="ac:hasIndefiniteness" content="1" />
+  Final peak usage and global environmental contamination
+ </span>
+  was reached during the mid-twentieth century, when
+  <span resource="#lead_as_petrol_additive" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="1950" />
+    <meta property="rdfs:label" content="Mid-twentieth century" />
+    <meta property="ac:hasIndefiniteness" content="1" />
+    <!-- <meta property="ac:hasConnection" resource="#final_lead_usage_peak" /> -->
+  lead was used as an antiknock additive for petrol in the increasingly fossil-fuel driven transport system.
+  </span>
+  <span resource="#final_lead_usage_peak">
+  This last peak, being in several geological archives an order of magnitude higher than the former more regional peaks of lead usage, provides a marker
+  for the Great Acceleration.
+  </span>
+  Although it was not as pronounced as are other chemical markers around the 1950s,
+  <span resource="#final_lead_usage_peak">
+  the lead peak was very distinct and globally distributed on both land and oceans.
+  </span>
+  Due to the eventual recognition of its toxic behaviour,
+  <span resource="#lead_ban" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1970" />
+      <meta property="rdfs:label" content="From the 1970s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  lead as a petrol additive was banned in more and more countries, starting in the USA and Europe
+  </span>
+  from the 1970s onwards. The recent widespread
+  <span resource="#Pb_expulsion_increase" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1920" />
+      <meta property="rdfs:label" content="1920s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1967" />
+      <meta property="rdfs:label" content="Late 1960s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  Pb expulsion, then, began to increase
+  </span>
+  in the 1920s, peaked in the late 1960s, and
+  <span resource="#Pb_expulsion_decline" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1977" />
+      <meta property="rdfs:label" content="Late 1970s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  declined from the late 1970s onward,
+  </span>
+  arriving at
+  <span resource="#current_lead_contamination_values" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="2022" />
+    <meta property="rdfs:label" content="Today" />
+    <meta property="ac:hasIndefiniteness" content="1" />
+  today’s intermediate to high values of contamination and fluxes of lead in the Earth system
+  </span>
+  (Gałuszka and Wagreich 2019).
 </p>
 
 <h3>The Anthropocene signal amidst the noise</h3>
 
-<p id="P21">
-The large amounts of industrially-produced pollutants and emissions that have been introduced, over decades and centuries, 
-       into air, soil, and water have caused considerable changes to natural phenomena, such as the cycling of elements and 
-       changes in sea level. However, the Anthropocene signals lie amidst noise which arises for several reasons. One is the 
-       issue in making measurements with sufficient precision (easy for tide gauges, but tricky for some rare isotopes). Another 
-       is the geographic variability of many parameters. A third is the presence of natural variability over time. Despite these 
-       problems, many different types of anthropogenic signals have become increasingly prominent and isolatable since the middle 
-       of the twentieth century. 
+<p id="P22">
+The large amounts of industrially-produced pollutants and emissions that have been introduced, over decades and centuries,
+       into air, soil, and water have caused considerable changes to natural phenomena, such as the cycling of elements and
+       changes in sea level. However, the Anthropocene signals lie amidst noise which arises for several reasons. One is the
+       issue in making measurements with sufficient precision (easy for tide gauges, but tricky for some rare isotopes). Another
+       is the geographic variability of many parameters. A third is the presence of natural variability over time. Despite these
+       problems, many different types of anthropogenic signals have become increasingly prominent and isolatable since the middle
+       of the twentieth century.
 </p>
 
 </body>
-  
+
 </html>
