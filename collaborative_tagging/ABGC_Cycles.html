@@ -108,6 +108,7 @@ The Anthropocene Working Group is preparing the case for the definition of a new
          <span property="time:hasEnd" typeof="time:Instant">
            <meta property="time:inXSDgYear" content="2022" />
            <meta property="rdfs:label" content="To date" />
+           <meta property="ac:hasIndefiniteness" content="1" />
          </span>
        90 percent of all carbon used to date by humans was consumed to drive the huge recent industrial development
        </span>
@@ -150,6 +151,7 @@ The Anthropocene Working Group is preparing the case for the definition of a new
          <span property="time:hasEnd" typeof="time:Instant">
            <meta property="time:inXSDgYear" content="2022" />
            <meta property="rdfs:label" content="To date" />
+           <meta property="ac:hasIndefiniteness" content="1" />
          </span>
        the global sea level rose 30 cm
        </span>
@@ -237,6 +239,7 @@ The Anthropocene Working Group is preparing the case for the definition of a new
    <span resource="#illustration_of_ocean_dynamics" typeof="time:Instant">
      <meta property="time:inXSDgYear" content="2022" />
      <meta property="rdfs:label" content="currently" />
+     <meta property="ac:hasIndefiniteness" content="1" />
    These dynamics are well illustrated by the interactive graphics at the Permanent Service for Mean Sea Level (PSMSL) based at the National Oceanography Centre in Liverpool.
    </span>
 </p>
@@ -407,6 +410,7 @@ The
   <span property="time:hasBeginning" typeof="time:Instant">
     <meta property="time:inXSDgYear" content="1990" />
     <meta property="rdfs:label" content="Recent decades" />
+    <meta property="ac:hasIndefiniteness" content="1" />
   </span>
   increasing rate of change in temperature
   </span>
@@ -415,6 +419,7 @@ The
    <span property="time:hasBeginning" typeof="time:Instant">
      <meta property="time:inXSDgYear" content="1990" />
      <meta property="rdfs:label" content="Recent decades" />
+     <meta property="ac:hasIndefiniteness" content="1" />
    </span>
   measurable changes in Antarctic ice-core records
    </span>
@@ -471,6 +476,7 @@ The
     <span property="time:hasBeginning" typeof="time:Instant">
       <meta property="time:inXSDgYear" content="1900" />
       <meta property="rdfs:label" content="after 1900" />
+      <meta property="ac:hasIndefiniteness" content="1" />
     </span>
     <span property="time:hasEnd" typeof="time:Instant">
       <meta property="time:inXSDgYear" content="1970" />
@@ -497,6 +503,7 @@ A primary driver of global warming is the burning of fossil fuels which have cre
        <span resource="#Suess_effect_inflection" typeof="time:Instant">
          <meta property="time:inXSDgYear" content="1965" />
          <meta property="rdfs:label" content="Around 1965 CE" />
+         <meta property="ac:hasIndefiniteness" content="1" />
        Suess effect, with a pronounced inflection
        </span>
        around 1965 CE. This signal in ice cores shows little noise because it reflects the composition of a well-mixed atmosphere. It
@@ -509,6 +516,7 @@ A primary driver of global warming is the burning of fossil fuels which have cre
        <span resource="#atmospheric_signal_data_inflection" typeof="time:Instant">
          <meta property="time:inXSDgYear" content="1960" />
          <meta property="rdfs:label" content="Around 1960 CE" />
+         <meta property="ac:hasIndefiniteness" content="1" />
        data reveals the underlying atmospheric signal, with an inflection
        </span>
        around 1960 CE. Marine records, such as from corals, also demonstrate a clear signal (Figure 3).
@@ -518,9 +526,16 @@ A primary driver of global warming is the burning of fossil fuels which have cre
 A contrasting example is provided by sulphur in the atmosphere. It is released naturally from volcanic eruptions, but emissions
   increased enormously because of industrial processes, particularly the burning of sulphurous coal. Because this sulphur is in
   the form of microscopic aerosol particles, the abundance of sulphur in geological archives and its stable isotope composition
-  show regional variations (Fairchild 2019). For example, trees and speleothems in Europe show a mid-twentieth century rise followed
-  by a fall reflecting changes in this industrial activity. These records rely on micro-scale analytical techniques at specialized
-  facilities, such as ion probes or the fluorescence produced by X-rays in huge synchrotron facilities. Both are anthrobiogeochemical
+  show regional variations (Fairchild 2019). For example,
+  <span resource="#sulphur_isotope_regional_variations" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1950" />
+      <meta property="rdfs:label" content="Mid-twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  trees and speleothems in Europe show a mid-twentieth century rise followed by a fall reflecting changes in this industrial activity.
+  </span>
+  These records rely on micro-scale analytical techniques at specialized facilities, such as ion probes or the fluorescence produced by X-rays in huge synchrotron facilities. Both are anthrobiogeochemical
   records since the O and S isotopes in sulphate in rainfall become fractionated when stored in soil humic substances. This pollution
   indicator is also seen as an anthrogeochemical (i.e. non-biological) signal in Greenland ice, but is absent in Antarctic ice cores.
 </p>
@@ -529,9 +544,16 @@ A contrasting example is provided by sulphur in the atmosphere. It is released n
 
 <p id="P14">
 The modern nitrogen cycle is a typical anthrobiogeochemical cycle because human activities have led to substantial changes in
-       natural processes governing nitrogen fixation, its bioavailability, and its overall fate in the environment the production
-       of fertilizer through the synthesis of ammonia from atmospheric N2 (Haber-Bosch process) and its use in agriculture since
-       the beginning of the twentieth century constitute one of the most important sources of anthropogenic perturbations of
+       natural processes governing nitrogen fixation, its bioavailability, and its overall fate in the environment. The
+       <span resource="#production_and_use_of_fertilizer" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1900" />
+           <meta property="rdfs:label" content="Beginning of the twentieth century" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       production of fertilizer through the synthesis of ammonia from atmospheric N2 (Haber-Bosch process) and its use in agriculture
+       </span>
+       since the beginning of the twentieth century constitute one of the most important sources of anthropogenic perturbations of
        the nitrogen cycle, along with the burning of fossil fuels and symbiotic nitrogen fixation by bacteria hosted by cultivated plants.
 </p>
 
@@ -548,15 +570,77 @@ Nitrogen has two stable isotopes, 14N and 15N, with 14N making up 99.63 percent 
        be used as a signal of the Anthropocene. Sample analysis is again by mass spectrometry with preparation techniques tailored
        to create gas for analysis from materials such as organic matter or ice. The increase in concentrations of nitrogen compounds
        in the environment, especially from fossil fuel burning, is usually accompanied by a decrease in δ15N values. For example,
-       the differences in δ15N values of nitrate recorded in a Greenland ice core in the past 150 years was as high as 12‰, decreasing
-       from +11‰ to −1‰. Similar patterns of δ15N values were found in analyses of total nitrogen in organic carbon from dated
-       lake sediments collected from 25 remote and nutrient-poor lakes in the Northern Hemisphere. The present δ15N value of ∼8‰
-       recorded in North Pacific deep-sea corals is the lowest it has been during the last 5,000 years. In many environmental archives,
-       the rate of decline in the δ15N value has accelerated and become pronounced, but there are also reports of enrichment in 15N in
-       natural archives during recent decades. In coral skeletons from the Pearl River estuary in China, for example, relatively stable
-       δ15N values (a range of 9 to 12‰) were recorded in the skeletons dated from the mid-Holocene to the 1980s, followed by an increase
-       to >13‰ during 1987–1993 CE and later a decline to the pre-1980s values. The increase observed in the late 1980s/early 1990s was
-       caused by a growing input of sewage to the Pearl River estuary (Figure 4). Nitrification (oxidation of NH4+ from sewage to nitrites
+       the
+       <span resource="#15N_value_differences" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1872" />
+           <meta property="rdfs:label" content="Past 150 years" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+         <span property="time:hasEnd" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="2022" />
+           <meta property="rdfs:label" content="Past 150 years" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       differences in δ15N values of nitrate recorded in a Greenland ice core in the past 150 years was as high as 12‰, decreasing
+       from +11‰ to −1‰.
+       </span>
+       Similar patterns of δ15N values were found in analyses of total nitrogen in organic carbon from dated
+       lake sediments collected from 25 remote and nutrient-poor lakes in the Northern Hemisphere.
+       <span resource="#present_15N_value_North_Pacific" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2022" />
+         <meta property="rdfs:label" content="Present" />
+       The present δ15N value of ∼8‰ recorded in North Pacific deep-sea corals is the lowest it has been during the last 5,000 years.
+       </span>
+       In many environmental archives, the rate of decline in the δ15N value has accelerated and become pronounced, but there are also
+       <span resource="#15N_enrichment" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1990" />
+           <meta property="rdfs:label" content="Recent decades" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       reports of enrichment in 15N in natural archives
+       </span>
+       during recent decades. In coral skeletons from the Pearl River estuary in China, for example,
+       <span resource="#Pearl_River_15N_stability" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="-5000" />
+           <meta property="rdfs:label" content="Mid-Holocene" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+         <span property="time:hasEnd" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1980" />
+           <meta property="rdfs:label" content="1980s" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       relatively stable δ15N values (a range of 9 to 12‰)
+       </span>
+       were recorded in the skeletons dated from the mid-Holocene to the 1980s, followed by an
+       <span resource="#Pearl_River_15N_increase" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1987" />
+           <meta property="rdfs:label" content="1987" />
+       </span>
+        <span property="time:hasEnd" typeof="time:Instant">
+          <meta property="time:inXSDgYear" content="1993" />
+          <meta property="rdfs:label" content="1993" />
+       </span>
+       <!-- <meta property="ac:hasConnection" resource="#15N_enrichment" /> -->
+       increase to >13‰
+       </span>
+       during 1987–1993 CE and later a
+       <span resource="#Pearl_River_15N_decline" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1993" />
+           <meta property="rdfs:label" content="Later" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       decline to the pre-1980s values.
+       </span>
+       <span resource="#Pearl_River_15N_increase" >
+       The increase observed in the late 1980s/early 1990s was caused by a growing input of sewage to the Pearl River estuary
+       </span>
+       (Figure 4). Nitrification (oxidation of NH4+ from sewage to nitrites
        and nitrates) and subsequent denitrification (reduction of nitrates to N2O and N2) caused an increase in the δ15N values because
        the products of denitrification were enriched in the lighter N isotope, whereas the remaining inorganic N species were enriched
        in 15N. It is fortunate that despite the complexities of the biogeochemical cycling of different nitrogen species, both the
@@ -572,9 +656,17 @@ Trace metals are integral parts of natural element cycles and, before human inte
   the weathering of rocks. We focus here on lead (Pb), as it is relatively common in the Earth’s crust (average 14 ppm) compared to
   other trace metals, has been widely mined or formed a by-product of mining since prehistoric times, and is identified as a highly
   toxic element, making the monitoring of Pb contamination as well as searches for its provenance a critical issue in geological,
-  environmental, and public research. Beginning as early as thousands of years BCE, the increased availability of anthropogenic trace
-  metals in the environment, and thus their involvement in anthrobiogeochemical cycles, began with the mining of ores and other raw
-  materials for use in various industrial processes: initially lead was merely a by-product, and only later was mined directly.
+  environmental, and public research. Beginning as early as thousands of years BCE, the
+  <span resource="#anthropogenic_trace_metals" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="-10000" />
+      <meta property="rdfs:label" content="Thousands of years BCE" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  increased availability of anthropogenic trace metals in the environment, and thus their involvement in anthrobiogeochemical cycles, began with the mining of ores and other raw
+  materials for use in various industrial processes
+  </span>
+  : initially lead was merely a by-product, and only later was mined directly.
 </p>
 
 <p id="P18">
@@ -590,37 +682,125 @@ Many different techniques are used to determine total Pb concentrations in sampl
 </p>
 
 <p id="P19">
-The earliest regional to supra-regional peaks of aerosol Pb (a by-product of silver mining and smelting processes) can be
-  identified in Northern Hemisphere ice cores from Greenland and Arctic Canada, and are linked to Phoenician-Greek mining
-  and smelting activities some 3,000 years ago (Figure 5). This minor peak in some environmental archives of the Northern Hemisphere
-  was identified as a possible stratigraphic marker for an early Anthropocene (Wagreich and Draganits 2018).
+The
+<span resource="#earliest_aerosol_Pb_peak" typeof="time:Instant">
+  <meta property="time:inXSDgYear" content="-978" />
+  <meta property="rdfs:label" content="Some 3,000 years ago" />
+  <meta property="ac:hasIndefiniteness" content="1" />
+  earliest regional to supra-regional peaks of aerosol Pb (a by-product of silver mining and smelting processes)
+  </span>
+  can be identified in Northern Hemisphere ice cores from Greenland and Arctic Canada, and are linked to Phoenician-Greek mining
+  and smelting activities some 3,000 years ago (Figure 5).
+<span resource="#earliest_aerosol_Pb_peak">
+  This minor peak in some environmental archives of the Northern Hemisphere
+  was identified as a possible stratigraphic marker for an early Anthropocene
+  </span>
+  (Wagreich and Draganits 2018).
 </p>
 
-<p id="P3">
+<p id="P20">
 Later, silver, and thus also lead, mining and usage increased substantially during Roman times, which lead to significant human
+       <!-- Roman times timeframe not explicitly denoted. Tag or no tag? -->
        health problems. This usage is recorded in archives by a widespread lead peak, more pronounced than the earlier one, and
        is recognized in ice cores, estuaries, bogs, and remote lakes of the Northern Hemisphere; a Spanish source for the lead was
        revealed by isotope studies (Wagreich and Draganits 2018).
 </p>
 
-<p id="P20">
-Global lead production and usage only began to rise again with silver production in medieval times. This was followed by an even
-  larger rise due to silver mining and production in the New World, with abundant production and use punctuated by plagues and wars.
-  The Industrial Revolution brought a major rise in lead production and left a peak in archives around 1850–1890 CE that was much
-  larger than the Roman peak. The Australian Broken Hill lead signal beginning around the 1850s onward formed the first peak in
-  Antarctic ice cores. Final peak usage and global environmental contamination was reached during the mid-twentieth century, when
-  lead was used as an antiknock additive for petrol in the increasingly fossil-fuel driven transport system. This last peak, being
-  in several geological archives an order of magnitude higher than the former more regional peaks of lead usage, provides a marker
-  for the Great Acceleration. Although it was not as pronounced as are other chemical markers around the 1950s, the lead peak was
-  very distinct and globally distributed on both land and oceans. Due to the eventual recognition of its toxic behaviour, lead as
-  a petrol additive was banned in more and more countries, starting in the USA and Europe from the 1970s onwards. The recent widespread
-  Pb expulsion, then, began to increase in the 1920s, peaked in the late 1960s, and declined from the late 1970s onward, arriving at
-  today’s intermediate to high values of contamination and fluxes of lead in the Earth system (Gałuszka and Wagreich 2019).
+<p id="P21">
+Global lead production and usage only began to rise again with silver production in medieval times.
+<!-- Medieval times timeframe not explicitly denoted. Tag or no tag? -->
+  This was followed by an even larger rise due to silver mining and production in the New World, with abundant production and use punctuated by plagues and wars.
+  The
+  <span resource="#Industrial_Revolution_lead_production" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1850" />
+      <meta property="rdfs:label" content="Around 1850–1890 CE" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1890" />
+      <meta property="rdfs:label" content="Around 1850–1890 CE" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  Industrial Revolution brought a major rise in lead production and left a peak in archives
+  </span>
+  around 1850–1890 CE that was much larger than the Roman peak. The Australian Broken Hill lead signal beginning around the 1850s onward formed the
+  <span resource="#first_Antarctic_lead_peak" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1850" />
+      <meta property="rdfs:label" content="Around the 1850s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  first peak in Antarctic ice cores
+  </span>
+  .
+  <span resource="#final_lead_usage_peak" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="1950" />
+    <meta property="rdfs:label" content="Mid-twentieth century" />
+    <meta property="ac:hasIndefiniteness" content="1" />
+  Final peak usage and global environmental contamination
+ </span>
+  was reached during the mid-twentieth century, when
+  <span resource="#lead_as_petrol_additive" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="1950" />
+    <meta property="rdfs:label" content="Mid-twentieth century" />
+    <meta property="ac:hasIndefiniteness" content="1" />
+    <!-- <meta property="ac:hasConnection" resource="#final_lead_usage_peak" /> -->
+  lead was used as an antiknock additive for petrol in the increasingly fossil-fuel driven transport system.
+  </span>
+  <span resource="#final_lead_usage_peak">
+  This last peak, being in several geological archives an order of magnitude higher than the former more regional peaks of lead usage, provides a marker
+  for the Great Acceleration.
+  </span>
+  Although it was not as pronounced as are other chemical markers around the 1950s,
+  <span resource="#final_lead_usage_peak">
+  the lead peak was very distinct and globally distributed on both land and oceans.
+  </span>
+  Due to the eventual recognition of its toxic behaviour,
+  <span resource="#lead_ban" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1970" />
+      <meta property="rdfs:label" content="From the 1970s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  lead as a petrol additive was banned in more and more countries, starting in the USA and Europe
+  </span>
+  from the 1970s onwards. The recent widespread
+  <span resource="#Pb_expulsion_increase" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1920" />
+      <meta property="rdfs:label" content="1920s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1967" />
+      <meta property="rdfs:label" content="Late 1960s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  Pb expulsion, then, began to increase
+  </span>
+  in the 1920s, peaked in the late 1960s, and
+  <span resource="#Pb_expulsion_decline" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1977" />
+      <meta property="rdfs:label" content="Late 1970s" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  declined from the late 1970s onward,
+  </span>
+  arriving at
+  <span resource="#current_lead_contamination_values" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="2022" />
+    <meta property="rdfs:label" content="Today" />
+    <meta property="ac:hasIndefiniteness" content="1" />
+  today’s intermediate to high values of contamination and fluxes of lead in the Earth system
+  </span>
+  (Gałuszka and Wagreich 2019).
 </p>
 
 <h3>The Anthropocene signal amidst the noise</h3>
 
-<p id="P21">
+<p id="P22">
 The large amounts of industrially-produced pollutants and emissions that have been introduced, over decades and centuries,
        into air, soil, and water have caused considerable changes to natural phenomena, such as the cycling of elements and
        changes in sea level. However, the Anthropocene signals lie amidst noise which arises for several reasons. One is the
