@@ -3,7 +3,7 @@
       <transition name="fade-relations">
       <g v-if="isMounted">
           <g v-for="(link, l) in curvesPaths" :key="l" :class="{'not-selected' : selectedMarker.id !== link.id && selectedMarker.id !== null}" @click="addArrow(l)">
-            <path :class="[`link ${link.id}`, link.position]" :d="link.d" :stroke="link.color" :ref="`link-${l}`"/>
+            <path :class="[`link ${link.id}`, link.position, link.provenance]" :d="link.d" :stroke="link.color" :ref="`link-${l}`"/>
             <g>
               <circle :cx="elementCenter.x" :cy="elementCenter.y" r="2"/>
             </g>
@@ -52,6 +52,8 @@ export default {
             newObj["id"] = entity.id
             newObj["source-position"] = searchForIndex(onlyRelationalEntities, entity.id)
             newObj["targets"] = ['']
+            newObj["provenance"] = entity.provenance
+            // console.log(entity)
 
             if (currentEntity !== undefined) {
               newObj["target-position"] = searchForIndex(onlyRelationalEntities, currentEntity.id)
@@ -73,12 +75,13 @@ export default {
       return this.sourcesAndTargets.map((d, i) => {
         // const coords = this.getDr(d)
         // const coordinates = d.position === 'follows' ? coords[0] : coords[1]
-
+        console.log(d)
         return {
             id: d.id,
             targets: d.targets,
             d: this.generateDforArc(d),
-            position: d.position
+            position: d.position,
+            provenance: d.provenance
             // coordinates: coordinates === undefined ? [0, 0] : coordinates
           }
       })

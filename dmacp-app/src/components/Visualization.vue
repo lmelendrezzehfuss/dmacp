@@ -66,6 +66,7 @@ export default {
                         .nice()
 
       this.storeRealScale(xScale_)
+      console.log(xValuesMode)
       // here fix needed if events are not spread out in time
       return (x) => { return xScale_(x-xValuesMode) }
     },
@@ -85,6 +86,7 @@ export default {
     const data = this.data
     return data.map((essay, e) => {
         return essay.map((narration, n) => {
+            console.log(narration)
             return narration.entityTimePosition.map((entity) => {
                 const targets = narration.targets
                 return {
@@ -99,7 +101,8 @@ export default {
                         context: narration.intervalContext,
                         innerText: entity.innerText,
                         uncertaintyScore: entity.indefinitness,
-                        targets
+                        targets,
+                        provenance: narration.dataSource
                     }
                 } )
             })
@@ -124,7 +127,6 @@ export default {
     storeRealScale (scale) {
       const logScaleTicks = scale.ticks(5)
       logScaleTicks.push(this.xValuesMode)
-      logScaleTicks.push(2022)
       this.xTicks = logScaleTicks
     }
   },

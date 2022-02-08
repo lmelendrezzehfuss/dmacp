@@ -1,4 +1,6 @@
-export default async function loadFromApi(data) {
+import parseToolboxData from './parse-toolbox-data.js'
+
+export default async function loadFromApi(data, toolboxData) {
 
     const arraysOfText = data.acf._content.content
     const arrayOfData = []
@@ -92,7 +94,8 @@ export default async function loadFromApi(data) {
                     type: isInstant ? 'instant' : 'interval',
                     targets,
                     entityTimePosition: entityTimePosition.filter(d => { return d.label !== undefined }),
-                    intervalContext
+                    intervalContext,
+                    dataSource: "essay"
                 }
             })
 
@@ -101,6 +104,9 @@ export default async function loadFromApi(data) {
         arrayOfData.push(essay[0])
     })
 
-    // console.log(arrayOfData)
+    const parsedPaintboxData = parseToolboxData(toolboxData)
+    const mergedData = arrayOfData.push(parsedPaintboxData)
+    console.log(arrayOfData)
+    console.log(mergedData)
     return arrayOfData
 };

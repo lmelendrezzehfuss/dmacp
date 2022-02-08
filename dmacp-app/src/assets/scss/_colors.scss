@@ -163,6 +163,14 @@ svg {
             .follows {
                 stroke: #727193;
             }
+
+            .paintbox.precedes {
+                stroke: rgb(223, 115, 115);
+            }
+
+            .paintbox.follows {
+                stroke: rgb(167, 65, 65);
+            }
         }
     }
 }

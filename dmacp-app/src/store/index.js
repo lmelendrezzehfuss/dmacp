@@ -43,22 +43,28 @@ export default new Vuex.Store({
     loadingData ({commit}) {
 
       const essayUrl = 'https://content-dev.anthropocene-curriculum.org/wp-json/wp/v2/contribution?slug=combustion-products-as-markers-for-the-anthropocene'
+      const paintboxUrl = './data/sample-data.json'
 
-      axios.get(essayUrl)
-        .catch(function(error) {
-          console.log('Error', error.message)
-          if (!error.response) {}
-          loadData('./data/combustion.html')
-            .then((parsedData) => {
-              const status = "Loaded"
-              console.log('loading from local', parsedData)
-              commit('MUTATE_DATA', {status, parsedData})
-            })
-        })
-        .then((response) => {
+      const promise1 = axios.get(essayUrl).catch(function (error) {
+        console.log('Error', error.message)
+        if (!error.response) { }
+        loadData('./data/combustion.html')
+          .then((parsedData) => {
+            const status = "Loaded"
+            console.log('loading from local', parsedData)
+            commit('MUTATE_DATA', { status, parsedData })
+          })
+      })
+
+      const promise2 = axios.get(paintboxUrl)
+
+      Promise.all([promise1, promise2]).then((responses) => {
+        console.log(responses)
+          let essay = responses[0]
+          let paintbox = responses [1]
           let parsedData = []
           const status = "Loaded"
-          loadFromApi(response.data[0])
+          loadFromApi(essay.data[0], paintbox.data)
             .then(value => {
               parsedData = value
               commit('MUTATE_DATA', { status, parsedData }) 
