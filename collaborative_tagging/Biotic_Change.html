@@ -28,46 +28,116 @@ prefix="time: http://www.w3.org/2006/time# ac: http://anthropocene-curriculum.or
 
 <h3>The great interactions of life</h3>
 
-<p id="P2”>
-  The Earth is about 4.5 billion years old, and within a billion years of its formation it was alive. 
+<p id="P2">
+  <span resource="#earth_age" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="-4500000000" />
+      <meta property="rdfs:label" content="About 4.5 billion years" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  The Earth is about 4.5 billion years old
+  </span>
+  , and 
+  <span resource="#life_on_earth" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="-3500000000" />
+      <meta property="rdfs:label" content="Within a billion years of its formation" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+  within a billion years of its formation it was alive.  
+  </span>
   For much of geological time life was entirely microbial, but it has grown in mass, organism size, and 
   complexity, in the process transforming the planet to allow more life to diversify. These changes are 
   visible in the geological record.
 </p>
 
 
-<p id="P3”>
+<p id="P3">
 The early Earth was a very different place. Anoxic chemistry powered the earliest life, as both the atmosphere 
-  and oceans lacked breathable oxygen. By 2.5 billion years ago cyanobacteria (“blue-green algae”) had harnessed 
-  the energy of light to forge biological mass from water and carbon dioxide, releasing oxygen as a “waste” by-product.
+  and oceans lacked breathable oxygen. By 2.5 billion years ago 
+  <span resource="#light_and_oxygen" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="-2500000000" />
+    <meta property="rdfs:label" content="By 2.5 Billion years ago" />
+    <meta property="ac:hasIndefiniteness" content="1" />
+  cyanobacteria (“blue-green algae”) had harnessed the energy of light 
+  </span>
+  to forge biological mass from water and carbon dioxide, releasing oxygen as a “waste” by-product.
   For much of the early life oxygen was toxic, but other organisms learned to use this “waste” to release more energy
   through respiration. The ability of life to reuse “waste” is one of its enduring structures, but human ecologies 
   produce so much that Earth is once again in a phase of toxification.
 
 </p>
 
-<p id="P4”>
+<p id="P4">
 Without oxygen, the metabolic processes of life could not have evolved to allow organisms to get bigger and more
-       complex. The subsequent evolution of animals, over half a billion years ago, and the development of a 
-       plant-inhabited landscape from 470 million years ago, restructured life again. All our planet’s systems
+       complex. The 
+       <span resource="#evolution_of_animals" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="-500000000" />
+           <meta property="rdfs:label" content="Over half a billion years ago" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       subsequent evolution of animals
+       </span>
+       , over half a billion years ago, and the 
+       <span resource="#plant_inhabited_landscape" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="-470000000" />
+           <meta property="rdfs:label" content="470 Million years ago" />
+           <meta property="ac:hasIndefiniteness" content="1" />
+         </span>
+       development of a plant-inhabited landscape 
+       </span>
+       from 470 million years ago, restructured life again. All our planet’s systems
        were impacted by the resulting biochemical changes, eventually producing a world in which bipedal apes
        characterized by sophisticated cognitive functions could deliberately alter the biosphere (the biosphere 
-       is all life and its interactions with air, water and earth). Although geological latecomers—Homo sapiens 
+       is all life and its interactions with air, water and earth). Although 
+       <span resource="#appearance_of_homo_sapiens" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="-300000" />
+         <meta property="rdfs:label" content="300,000 Years Old" />
+         <meta property="ac:hasIndefiniteness" content="1" />
+       geological latecomers—Homo sapiens 
+       </span>
        is just 300,000 years old—humans have developed practices that are highly disruptive to life and may cause 
        a sixth mass extinction. 
 
 </p>
 
-<p id="P5”>
-Five major mass extinctions have occurred over the last 500 million years, resulting from such factors as 
-  large-scale changes in the oceans and climate, volcanism, and in one case—the end-Cretaceous extinction 
-  66 million years ago—the impact of a large asteroid in the Gulf of Mexico. Each time at least 75 percent 
-  of species diversity was lost, and it took millions of years for the biosphere to recover.
+<p id="P5">
+  <span resource="#major_mass_extinctions" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="-500000000" />
+      <meta property="rdfs:label" content="Over the last 500 million years" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="2022" />
+      <meta property="rdfs:label" content="Over the last 500 million years" />
+      <meta property="ac:hasIndefiniteness" content="1" />
+    </span>
+Five major mass extinctions have occurred over the last 500 million years
+    </span>
+, resulting from such factors as 
+  large-scale changes in the oceans and climate, volcanism, and in one case—the end-
+  <span resource="#cretaceous_extinction" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="-66000000" />
+    <meta property="rdfs:label" content="66 Million years ago" />
+    <meta property="ac:hasIndefiniteness" content="1" />
+   Cretaceous extinction
+  </span>
+   66 million years ago—the impact of a large asteroid in the Gulf of Mexico
+  . Each time at least 75 percent of species diversity was lost, and it took millions of years for the biosphere to recover.
 </p>
 
 <p id="P6">
-More recent and less catastrophic events may also provide a guide to near future change. The ‘Great American 
-       Interchange’ 2.7 million years ago occurred when North and South America became joined at the Isthmus 
+More recent and less catastrophic events may also provide a guide to near future change. 
+<span resource="#great_american_interchange" typeof="time:Instant">
+  <meta property="time:inXSDgYear" content="-2700000" />
+  <meta property="rdfs:label" content="2.7 Million years ago" />
+  <meta property="ac:hasIndefiniteness" content="1" />
+  The ‘Great American Interchange’ 
+  </span>
+  2.7 million years ago occurred when North and South America became joined at the Isthmus 
        of Panama. Organisms moved both ways between the continents, but physical barriers in the north—a desert 
        to cross in Mexico—and the absence of placental mammals in the south informed the way that ecosystems
        responded to the exchange. Such insights, even from the remote geological past, can help us to understand
@@ -77,26 +147,62 @@ More recent and less catastrophic events may also provide a guide to near future
 
 <h3>Human interaction with the biosphere</h3>
 
-<p id="P7”>
+<p id="P7">
 For most of human history our impact on the biosphere was negligible. We lived as hunter-gatherers, subsisting 
   off what the land could provide. This lifestyle, now restricted to small groups, is thought able to support
-  a few million people. The first semi-permanent human-made dwellings that were not caves appeared 30,000 years
-  ago. They are part of our increasing technological sophistication that entwines with a record of widespread
-  impacts on large animals during the Late Pleistocene, called the megafauna extinctions (Koch and Barnosky 2006).
+  a few million people. The 
+  <span resource="#first_semi_permanent_dwellings" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="-27978" />
+    <meta property="rdfs:label" content="30,000 Years ago" />
+  first semi-permanent human-made dwellings that were not caves 
+  </span>
+  appeared 30,000 years ago. They are part of our increasing technological sophistication that entwines with a 
+  <span resource="#megafauna_extinctions" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="-27978" />
+      <meta property="rdfs:label" content="30,000 Years ago" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="-9678" />
+      <meta property="rdfs:label" content="During the Late Pleistocene" />
+      <meta property="ac:hasIndefiniteness" content="0.6" />
+    </span>
+   record of widespread impacts on large animals during the Late Pleistocene
+   </span>
+  , called the megafauna extinctions (Koch and Barnosky 2006).
 </p>
-<p id="P8”>
-The first permanent human settlements appeared in the eastern Mediterranean and Near East towards the end of
-       the Pleistocene (from about 13,000 years ago). They are tied to the development of agriculture and
-       pastoralism that accelerated changes to the biosphere—the ArchaeoGLOBE Project has tracked these developments
-       over the past ten millennia (Stephens et al. 2019). Six millennia before the present many parts of the world
-       had already witnessed some form of agriculture, though areas of continuous farming were still small. By the
-       time of the Romans, many regions of the Earth showed the imprint of agriculture, and of the exploitation 
-       of animals (Bomgardner 1992).
+<p id="P8">
+The 
+<span resource="#first_permanent_settlements" typeof="time:Instant">
+  <meta property="time:inXSDgYear" content="-10978" />
+  <meta property="rdfs:label" content="About 13,000 years ago" />
+  <meta property="ac:hasIndefiniteness" content="0.6" />
+    first permanent human settlements
+</span>
+  appeared in the eastern Mediterranean and Near East towards the end of the Pleistocene
+  (from about 13,000 years ago). They are tied to the development of agriculture and
+  pastoralism that accelerated changes to the biosphere—the ArchaeoGLOBE Project has tracked these developments
+  over the past ten millennia (Stephens et al. 2019). Six millennia before the present 
+  <span resource="#small_areas_of_continuous_farming" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="-3978" />
+      <meta property="rdfs:label" content="Six millennia before the present" />
+      <meta property="ac:hasIndefiniteness" content="0.6" />
+    many parts of the world had already witnessed some form of agriculture, though areas of continuous farming were still small. 
+  </span>
+  By the time of the Romans, many regions of the Earth showed the imprint of agriculture, and of the exploitation 
+  of animals (Bomgardner 1992).
 </p>
-<p id="P9”>
+<p id="P9">
 Continued landscape modification has left a paleontological record, for example of the exploitative mechanisms of
   colonialism. The Columbian Exchange becomes detectable in the fossil record of maize pollen in African lakes,
-  as does the introduction of pine trees by European colonizer states during the early twentieth-century “Scramble 
+  as does the 
+  <span resource="#introduction_of_pine_trees_in_africa" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="1900" />
+    <meta property="rdfs:label" content="Early twentieth-century" />
+    <meta property="ac:hasIndefiniteness" content="0.2" />
+  introduction of pine trees by European colonizer states 
+  </span>
+  during the early twentieth-century “Scramble 
   for Africa.” In eastern North America, European settlement was synonymous with land clearing, where settlers 
   replaced the mixed and deciduous forests with artificial grasslands. This allowed weeds like ragweed (the not-so-aptly
   named Ambrosia) to proliferate, to the ongoing dismay of allergy sufferers. Contrary to a popular misconception,
@@ -105,35 +211,83 @@ Continued landscape modification has left a paleontological record, for example 
   95 percent of the Earth’s ice-free landscape is modified in some way by humans (Kennedy et al. 2019); more recently 
   the oceans also show significant evidence of human impact (Halpern et al. 2008).
 </p>
-<p id="P10”>
-Profound signals of biological change are evident in the twentieth century. One catalyst for this change is the chemistry
-       of the Haber-Bosch process, which fixes atmospheric nitrogen to make fertilizers and is now necessary to feed 
-       approximately half the world’s human population (Smil 1999). The scale of this process has left a visible nitrogen 
+<p id="P10">
+  <span resource="#signals_of_biological_change" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1900" />
+      <meta property="rdfs:label" content="Twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="0.4" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1999" />
+      <meta property="rdfs:label" content="Twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="0.4" />
+    </span>
+Profound signals of biological change are evident 
+  </span>
+in the twentieth century. One catalyst for this change is the 
+<span resource="#haber_bosch_process" typeof="time:Instant">
+  <meta property="time:inXSDgYear" content="1913" />
+  <meta property="rdfs:label" content="Twentieth century" />
+       chemistry of the Haber-Bosch process, which fixes atmospheric nitrogen to make fertilizers 
+  </span>
+and 
+<span resource="#haber_bosch_process_use" typeof="time:Instant">
+   <meta property="time:inXSDgYear" content="2022" />
+   <meta property="rdfs:label" content="Now" />
+       is now necessary to feed approximately half the world’s human population
+  </span>
+       (Smil 1999). The scale of this process has left a visible nitrogen 
        signal in the geological record as a marker of the Anthropocene (Holtgrieve et al. 2011). To this profound change 
        we can also add the land appropriated to supply increasing meat consumption, or the use of a wide range of
        agricultural products such as oil palm that find their way into everything from toothpaste to chocolate, all 
        of which brings about a rapid decrease in living space for nonhumans. 
 </p>
-<p id="P11”>
-The dramatic increase in the combustion of petroleum in the mid-twentieth century is reflected in the microfossil
-  record, as algae respond to concentrations of atmospheric CO2 not seen in over three million years. Plants flourish 
-  with higher concentrations of the basic raw material of photosynthesis, and they expend less energy taking this in,
-  which is reflected in the decreased number of breathing pores called stomata in the leaves of land plants.
+<p id="P11">
+The 
+<span resource="#petroleum_combustion_increase" typeof="time:Instant">
+  <meta property="time:inXSDgYear" content="1950" />
+  <meta property="rdfs:label" content="Mid-twentieth century" />
+  <meta property="ac:hasIndefiniteness" content="0.2" />
+dramatic increase in the combustion of petroleum
+  </span>
+ in the mid-twentieth century is reflected in the microfossil
+  record, as 
+  <span resource="#algae_response_to_co2" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1950" />
+      <meta property="rdfs:label" content="Mid-twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  algae respond to concentrations of atmospheric CO2
+   </span>
+  not seen in over three million years. 
+  Plants flourish with higher concentrations of the basic raw material of photosynthesis, and they expend less energy taking this in,
+  which is reflected in the 
+  <span resource="#decreased_stomata" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1950" />
+      <meta property="rdfs:label" content="Mid-twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  decreased number of breathing pores called stomata in the leaves of land plants.
+    </span>
+  
 </p>
-<p id="P12”>
+<p id="P12">
 In the following section we examine how these human impacts play out in many different ecosystems, and how the AWG 
        can use these signals to recognize the Anthropocene.
 </p>
 
 <h3>The fossil record of rapid changes to the biosphere</h3>
 
-<p id="P13”>
+<p id="P13">
 Humans have caused the extinction of other organisms for millennia, moved animals and plants beyond their native ecologies,
   and reconfigured ecosystems. Which of these provide a fossil signature for the Anthropocene?
 
 </p>
 
-<p id="P14”>
+<p id="P14">
 To define a geological boundary, a surface of equivalent time everywhere is needed—an isochronous surface that can be
        recognized in geological successions globally. Many boundaries in deep time are marked by the first appearance 
        of a particular fossil—such as the mouthparts of a species of marine vertebrates named conodonts in the case of 
@@ -143,36 +297,171 @@ To define a geological boundary, a surface of equivalent time everywhere is need
        Anthropocene.
 </p>
 
-<p id="P15”>
-The first widespread extinction where humans were a causal mechanism is the series of prominent extinctions of large
+<p id="P15">
+The 
+<span resource="#late_quaternary_extinction" typeof="time:Instant">
+  <meta property="time:inXSDgYear" content="-9678" />
+  <meta property="rdfs:label" content="End of the last Ice Age" />
+  <meta property="ac:hasIndefiniteness" content="0.6" />
+  first widespread extinction where humans were a causal mechanism
+  </span>
+  is the series of prominent extinctions of large
   vertebrates termed the “Late Quaternary Extinction” at the end of the last Ice Age. In North America, this coincided
-  with the arrival of the Clovis people replete with sophisticated stone tools for hunting. Large mammals including 
-  the magnificent Irish elk and iconic woolly mammoth disappeared from Europe and Asia, though the latter survived in
-  the eastern Arctic until about 4,000 years ago. Although these extinctions are widespread, they occurred over tens 
+  with the 
+  <span resource="#clovis_people_in_north_america" typeof="time:Instant">
+    <meta property="time:inXSDgYear" content="-9678" />
+    <meta property="rdfs:label" content="End of the last Ice Age" />
+    <meta property="ac:hasIndefiniteness" content="0.6" />
+  arrival of the Clovis people  
+  </span>
+  replete with sophisticated stone tools for hunting.
+  <span resource="#large_mammal_disappearance" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="-9678" />
+      <meta property="rdfs:label" content="End of the last Ice Age" />
+      <meta property="ac:hasIndefiniteness" content="0.6" />
+    </span>
+  Large mammals including the magnificent Irish elk and iconic woolly mammoth disappeared from Europe and Asia, 
+  </span>
+  though 
+  <span resource="#mammoth_survival" typeof="time:ProperInterval">
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="-1978" />
+      <meta property="rdfs:label" content="About 4,000 years ago" />
+      <meta property="ac:hasIndefiniteness" content="0.6" />
+    </span>
+  the latter survived in the eastern Arctic
+  </span>
+  until about 4,000 years ago. 
+  Although these extinctions are widespread, they occurred over tens 
   of thousands of years and do not identify an isochronous surface. Nevertheless, they do identify the regional effects 
   (Barnosky et al. 2014) and progressive global impacts, of the human restructuring of the biosphere. 
 
 </p>
 
-<p id="P16”>
-Human translocation of organisms has occurred for thousands of years, but these have accelerated since the second
-       half of the twentieth century. Some translocations leave little geological trace, but other invasive biological
-       agents do, creating a signal of the almost simultaneous intercontinental dispersal of many marine and terrestrial 
-       species in the later twentieth century. Many of these transfers are intimately linked with the local extirpation
-       of native species, and they have had, and will continue to have, the net effect of homogenizing the world’s biota 
-       and depleting global biodiversity. Regions that had very different species assemblages prior to human impacts are
-       now looking more and more alike as the same species take over throughout the world.
+<p id="P16">
 
+<span resource="#translocation_of_organisms" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="-5000" />
+      <meta property="rdfs:label" content="Thousands of years" />
+      <meta property="ac:hasIndefiniteness" content="0.6" />
+    </span>
+   Human translocation of organisms
+    </span>
+    has occurred for thousands of years, but 
+    <span resource="#accelerated_translocation_of_organisms" typeof="time:ProperInterval">
+        <span property="time:hasBeginning" typeof="time:Instant">
+          <meta property="time:inXSDgYear" content="1960" />
+          <meta property="rdfs:label" content="Second half of the twentieth century" />
+          <meta property="ac:hasIndefiniteness" content="0.2" />
+        </span>
+    these have accelerated
+  </span>
+    since the second half of the twentieth century. Some translocations leave little geological trace, but other invasive biological
+    agents do, creating a signal of the almost simultaneous 
+    <span resource="#intercontinental_dispersal_of_organisms" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="1975" />
+         <meta property="rdfs:label" content="Later twentieth century" />
+         <meta property="ac:hasIndefiniteness" content="0.2" />
+      intercontinental dispersal of many marine and terrestrial species 
+    </span>
+       in the later twentieth century. Many of these 
+     <span resource="#native_species_extirpation" typeof="time:Instant">
+          <meta property="time:inXSDgYear" content="1975" />
+          <meta property="rdfs:label" content="Later twentieth century" />
+          <meta property="ac:hasIndefiniteness" content="0.2" />
+      transfers are intimately linked with the local extirpation
+       of native species
+     </span>
+       , and they have had, and will continue to have, the 
+       <span resource="#biota_homogeneity" typeof="time:ProperInterval">
+           <span property="time:hasBeginning" typeof="time:Instant">
+             <meta property="time:inXSDgYear" content="1975" />
+             <meta property="rdfs:label" content="Later twentieth century" />
+             <meta property="ac:hasIndefiniteness" content="0.2" />
+           </span>
+      net effect of homogenizing the world’s biota and depleting global biodiversity. 
+      </span>
+      Regions that had very different species assemblages prior to human impacts are
+      now looking more and more alike as the 
+      <span resource="#same_species" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="2022" />
+           <meta property="rdfs:label" content="Now" />
+     same species take over throughout the world.
+     </span>
 </p>
 
-<p id="P17”>
+<p id="P17">
 Species translocations have been facilitated by human communication networks and by extensive habitat modifications 
-  that promote the influx of non-native species. Notorious examples include the Zebra mussel—an invader of European 
-  rivers for two centuries before migrating to North America in the 1980s, where it rapidly dispersed through the 
-  continent’s aquatic ecologies—and the Argentinian Golden Apple Snail, which has rampaged through Southeast Asian 
-  rice paddies since the 1980s. Meanwhile, on the west coast of the US, organisms from East Asia invaded the estuary 
-  of San Francisco Bay in the 1980s, leaving a fossil signal of their presence (McGann et al. 2000). Identified from 
-  historical contexts, human encroachment on estuary ecologies produced dramatic changes, but these have accelerated 
+  that promote the influx of non-native species. Notorious examples include the 
+  <span resource="#zebra_mussel_in_europe" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1780" />
+      <meta property="rdfs:label" content="Two centuries" />
+      <meta property="ac:hasIndefiniteness" content="0.4" />
+    </span>
+    <span property="time:hasEnd" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1980" />
+      <meta property="rdfs:label" content="1980s" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  Zebra mussel— an invader of European rivers
+  </span>
+  for two centuries before 
+  <span resource="#zebra_mussel_migration_to_america" typeof="time:Instant">
+       <meta property="time:inXSDgYear" content="1980" />
+       <meta property="rdfs:label" content="1980s" />
+       <meta property="ac:hasIndefiniteness" content="0.2" />
+  migrating to North America
+  </span>
+  in the 1980s, where it rapidly 
+  <span resource="#zebra_mussel_dispersion" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1980" />
+      <meta property="rdfs:label" content="1980s" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  dispersed through the continent’s aquatic ecologies
+   </span>
+  —and the 
+  <span resource="#argentinian_golden_apple_snail" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1980" />
+      <meta property="rdfs:label" content="1980s" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  Argentinian Golden Apple Snail, which has rampaged through Southeast Asian rice paddies
+  </span>
+  since the 1980s. Meanwhile, on the west coast of the US, 
+  <span resource="#san_francisco_bay_invasion" typeof="time:Instant">
+       <meta property="time:inXSDgYear" content="1980" />
+       <meta property="rdfs:label" content="1980s" />
+       <meta property="ac:hasIndefiniteness" content="0.2" />
+  organisms from East Asia invaded the estuary of San Francisco Bay
+  </span>
+  in the 1980s, leaving a 
+  <span resource="#fossil_signal_in_san_francisco_bay" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1980" />
+      <meta property="rdfs:label" content="1980s" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  fossil signal of their presence 
+  </span>
+  (McGann et al. 2000). Identified from historical contexts, 
+  <span resource="#translocation_of_organisms">
+  human encroachment on estuary ecologies produced dramatic changes
+  </span>
+  , but 
+  <span resource="#acceleration_of_changes_by_human_encroachment" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1950" />
+      <meta property="rdfs:label" content="Mid-twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  these have accelerated
+  </span>
   from the mid-twentieth century (Cearreta et al. 2002). Biological signals include the total elimination or reduced 
   biodiversity and abundance of the original biota, the replacement of indigenous species—by others more tolerant of 
   pollution, water acidification and salinity change, and competition with non-native species—and deformities in the 
@@ -180,7 +469,7 @@ Species translocations have been facilitated by human communication networks and
 
 </p>
 
-<p id="P18”>
+<p id="P18">
 Lakes are important continental ecosystems that have been cradles of evolution. Human settlements in their catchments
        were provided with freshwater, but the lakes received the waste generated by agriculture and industry, and this
        impairment is recorded by the fossil record of the entire lake ecosystems. The most commonly studied 
@@ -205,16 +494,61 @@ Lakes are important continental ecosystems that have been cradles of evolution. 
 
 </p>
 
-<p id="P19”>
+<p id="P19">
 
 Some of the most substantial evidence of human impact on life that the AWG is investigating is preserved in the 
-  skeletons of corals. Coral reefs have seen massive declines in recent years following coral bleaching events triggered 
-  by rapid ocean warming. Significant modifications to coral reef communities in the twentieth and twenty-first centuries
-  have also been caused by damaging cyclones, spikes in predators, and increased sediment delivery to reefs (Zinke et al. 2018). 
+  skeletons of corals. 
+  <span resource="#coral_reefs_declines" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="2010" />
+      <meta property="rdfs:label" content="Recent years" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  Coral reefs have seen massive declines
+  </span>
+  in recent years following coral bleaching events triggered 
+  by rapid ocean warming. 
+  <span resource="#coral_reef_modifications" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1900" />
+      <meta property="rdfs:label" content="Twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  Significant modifications to coral reef communities
+  </span>
+  in the twentieth and twenty-first centuries
+  have also been caused by 
+  <span resource="#damaging_cyclones" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1900" />
+      <meta property="rdfs:label" content="Twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  damaging cyclones
+  </span>
+  , 
+  <span resource="#predator_spikes" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1900" />
+      <meta property="rdfs:label" content="Twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  spikes in predators
+  </span>
+  , and 
+  <span resource="#increased_reef_sediments" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="1900" />
+      <meta property="rdfs:label" content="Twentieth century" />
+      <meta property="ac:hasIndefiniteness" content="0.2" />
+    </span>
+  increased sediment delivery to reefs
+  </span>
+  (Zinke et al. 2018). 
 
 </p>
 
-<p id="P20”>
+<p id="P20">
 
 Knowing how reef ecologies responded to past environmental change (including past mass extinction events) might provide 
        insights to future patterns (Leinfelder 2019). Some living reefs thrive in muddy and silty conditions, often in 
@@ -224,8 +558,14 @@ Knowing how reef ecologies responded to past environmental change (including pas
 
 </p>
 
-<p id="P21”>
-Recent coral skeletons also preserve a record of environmental change over hundreds of years, and at a resolution of weeks
+<p id="P21">
+<span resource="#coral_skeletons" typeof="time:Instant">
+       <meta property="time:inXSDgYear" content="2010" />
+       <meta property="rdfs:label" content="Recent" />
+       <meta property="ac:hasIndefiniteness" content="0.2" />
+Recent coral skeletons also preserve a record of environmental change over hundreds of years
+</span>
+, and at a resolution of weeks
   to months, which makes them the prime archive in tropical oceans. They also record nuclear fallout from weapons testing,
   pollution, sedimentation, acidification, sea surface saltiness, temperature changes, and changes in skeletal chemistry 
   attributed to the uptake of atoms of carbon derived from the burning of fossil fuels. Corals then offer a high precision 
@@ -233,21 +573,62 @@ Recent coral skeletons also preserve a record of environmental change over hundr
 
 </p>
 
-<p id="P22”>
+<p id="P22">
 Because thousands of different species both on the land and in the sea have been translocated across the Earth, and because 
        there are myriad other geological signals by which to build a chain of correlation, the fossil record of the Anthropocene
        in a coral reef can be linked with records from around the world, including those in colder and deeper waters where
        coralline algae take over as precise recorders of environmental change. Coralline algae are particularly sensitive
        proxies of dissolved inorganic carbon (DIC), which is important for understanding atmosphere-ocean interactions.
-       Although there are no instrumental records of DIC prior to the 1970s, a coralline alga from the cold Labrador Sea 
-       provides an annually resolved continuous record of DIC variability back to the year 1740 CE. This shows an 
-       increasing influence of anthropogenic carbon dioxide emissions from the 1960s (Hou et al. 2019). The specific 
+       Although there are 
+       <span resource="#no_DIC_records" typeof="time:ProperInterval">
+         <span property="time:hasEnd" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1970" />
+           <meta property="rdfs:label" content="1970s" />
+           <meta property="ac:hasIndefiniteness" content="0.2" />
+         </span>
+       no instrumental records of DIC
+       </span>
+       prior to the 1970s, a 
+       <span resource="#coralline_alga" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1740" />
+           <meta property="rdfs:label" content="1740" />
+         </span>
+       coralline alga from the cold Labrador Sea provides an annually resolved continuous record of DIC variability
+       </span>
+       back to the year 1740 CE. This shows an 
+       <span resource="#increasing_anthropogenic_co2_emissions" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1960" />
+           <meta property="rdfs:label" content="1960s" />
+           <meta property="ac:hasIndefiniteness" content="0.2" />
+         </span>
+       increasing influence of anthropogenic carbon dioxide emissions
+       </span>
+       from the 1960s (Hou et al. 2019). The specific 
        proxy measured is the relative amount of two isotopes of carbon, 12C and 13C, denoted as a ratio ‘δ13C’ within 
        the skeletal carbonate of the alga. The amount is influenced by anthropogenic emissions of CO2 that are characterized
        by isotopically light carbon (12C). Some of this isotopically distinctive CO2 having been discharged into the
        atmosphere then dissolves into the oceans where it is taken up by the algae (and by corals as well). A multiple site
-       record of δ13C from coralline algae in the Arctic Ocean, meanwhile, reflects variations in sea-ice cover back to the 
-       fourteenth century, with a long-term decline since the 1850s probably reflecting industrial-era warming (Halfar et al. 
+       record of δ13C from coralline algae in the Arctic Ocean, meanwhile, reflects 
+       <span resource="#sea_ice_cover_variations" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1300" />
+           <meta property="rdfs:label" content="Fourteenth century" />
+           <meta property="ac:hasIndefiniteness" content="0.4" />
+         </span>
+       variations in sea-ice cover 
+       </span>
+       back to the fourteenth century, with a 
+       <span resource="#decline_in_sea_ice_cover_variations" typeof="time:ProperInterval">
+         <span property="time:hasBeginning" typeof="time:Instant">
+           <meta property="time:inXSDgYear" content="1850" />
+           <meta property="rdfs:label" content="1850s" />
+           <meta property="ac:hasIndefiniteness" content="0.2" />
+         </span>
+       long-term decline 
+       </span>
+       since the 1850s probably reflecting industrial-era warming (Halfar et al. 
        2013). In this case, the δ13C reflects changes in the primary production of photosynthetic plankton in the waters which
        are influenced by the annual duration of sea ice cover. Because photosynthetic plankton preferentially use the lighter
        isotope of carbon, the ambient waters become enriched in the heavier 13C that the coralline algae then incorporate into 
@@ -257,20 +638,78 @@ Because thousands of different species both on the land and in the sea have been
 
 <h3>Different paths to the future</h3>
 
-<p id="P23”>
+<p id="P23">
 How might the paleontological signal of the Anthropocene appear to a future geologist? In the near future, as human impacts on 
-  the biosphere grow, millions of species may be lost, which would be evident as an abrupt change in the species preserved as 
-  fossils in the sedimentary deposits of the Anthropocene. For humans and most of the current biosphere this record will represent 
-  a catastrophe. Surviving humans, perhaps the great-grandchildren of today’s children, will live in a world with degraded 
-  ecosystems, a world with dramatically diminished land- and seascapes. These patterns are already emerging. Oil palm has 
-  exploded across the tropical island of Borneo, whilst the Great Barrier Reef has suffered unprecedented damage in the early 
-  twenty-first century. 
+  the biosphere grow, 
+  <span resource="#loss_of_species" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2050" />
+         <meta property="rdfs:label" content="Near future" />
+         <meta property="ac:hasIndefiniteness" content="0.4" />
+  millions of species may be lost
+  </span>
+  , which would be evident as an 
+  <span resource="#change_in_fossil_records" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2050" />
+         <meta property="rdfs:label" content="Near future" />
+         <meta property="ac:hasIndefiniteness" content="0.4" />
+  abrupt change in the species preserved as fossils in the sedimentary deposits of the Anthropocene
+  </span>
+  . For humans and most of the current biosphere this 
+  <span resource="#record_change_catastrophe" typeof="time:ProperInterval">
+    <span property="time:hasBeginning" typeof="time:Instant">
+      <meta property="time:inXSDgYear" content="2050" />
+      <meta property="rdfs:label" content="Near future" />
+      <meta property="ac:hasIndefiniteness" content="0.4" />
+    </span>
+  record will represent a catastrophe
+  </span>
+  . Surviving humans, perhaps the great-grandchildren of today’s children, will live in a world with  
+  <span resource="#degraded_ecosystems" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2120" />
+         <meta property="rdfs:label" content="Great-grandchildren of today’s children" />
+         <meta property="ac:hasIndefiniteness" content="0.4" />
+  degraded ecosystems
+  </span>
+  , a world with 
+  <span resource="#diminished_land_and_seascapes" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2120" />
+         <meta property="rdfs:label" content="Great-grandchildren of today’s children" />
+         <meta property="ac:hasIndefiniteness" content="0.4" />
+  dramatically diminished land- and seascapes
+  </span>
+  . These 
+  <span resource="#already_emerging_patterns" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2022" />
+         <meta property="rdfs:label" content="Now" />
+         <meta property="ac:hasIndefiniteness" content="0.2" />
+  patterns are already emerging
+  </span>
+  . 
+  <span resource="#oil_palm" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2000" />
+         <meta property="rdfs:label" content="Early twenty-first century" />
+         <meta property="ac:hasIndefiniteness" content="0.2" />
+  Oil palm has exploded across the tropical island of Borneo
+  </span>
+  , whilst the 
+  <span resource="#great_barrier_reef_damage" typeof="time:Instant">
+         <meta property="time:inXSDgYear" content="2000" />
+         <meta property="rdfs:label" content="Early twenty-first century" />
+         <meta property="ac:hasIndefiniteness" content="0.2" />
+  Great Barrier Reef has suffered unprecedented damage
+  </span>
+  in the early twenty-first century. 
+  
 </p>
 
-<p id="P24”>
+<p id="P24">
 An alternative fossil record is grounded in a more harmonious relationship with the biosphere. In a world in which we act fast 
        to avert a mass extinction event, the fossil record would still preserve the basal Anthropocene horizon, already evident
-       by the many species we have moved across the world, but this would soon be followed by a paleontological record of recovery
+       by the 
+       <span resource="#translocation_of_organisms">
+       many species we have moved across the world
+       </span>
+       , but this would soon be followed by a paleontological record of recovery
        , as ecologies repair themselves. This alternative future can become reality: some human cultures are pathfinders for 
        a more sympathetic relationship with the biosphere. They include the indigenous peoples of Haida Gwaii (British Columbia),
        who use their coastal ecosystems in a sustainable manner (Eckert et al. 2018). They live alongside their aquatic neighbors
